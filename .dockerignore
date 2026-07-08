@@ -1,0 +1,24 @@
+# Monorepo root — only licensing-server/backend is needed for Railway deploy
+.git/
+.gitignore
+__pycache__/
+*.pyc
+.env
+.env.production
+venv/
+.venv/
+*.bat
+*.png
+*.html
+*.ico
+*.svg
+*.md
+node_modules/
+Backtesting Bot/
+Back Testing Bot Based ON live/
+stratum/
+production/
+config/
+data/
+logs/
+reports/
