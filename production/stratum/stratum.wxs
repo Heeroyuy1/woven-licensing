@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Stratum — AI Trading Strategy Analyzer
+MSI Installer Definition for WiX Toolset v3.x
+-->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <Product
+    Id="*"
+    Name="Stratum — AI Trading Strategy Analyzer"
+    Language="1033"
+    Version="1.3.0"
+    Manufacturer="Woven Model"
+    UpgradeCode="{E8A5B3C1-2D4F-4A6E-9B8C-7D1E2F3A4B5C}">
+
+    <Package
+      InstallerVersion="200"
+      Compressed="yes"
+      InstallScope="perMachine"
+      Platform="x64"
+      Description="Stratum — AI Trading Strategy Analyzer Installer"
+      Comments="© 2025 Woven Model. All rights reserved."
+      Keywords="trading,strategy,backtesting,AI,Woven Model,Stratum"
+      Manufacturer="Woven Model"
+    />
+
+    <!-- Prevent downgrades; allow same-version reinstall -->
+    <MajorUpgrade
+      DowngradeErrorMessage="A newer version of [ProductName] is already installed."
+      Schedule="afterInstallValidate"
+    />
+
+    <!-- Destination directory: Program Files 64-bit \ Woven Model \ Stratum -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="WovenModelFolder" Name="Woven Model">
+          <Directory Id="INSTALLDIR" Name="Stratum">
+            <Directory Id="ProfilesDir" Name="profiles"/>
+            <Directory Id="ReportsDir" Name="reports"/>
+            <Directory Id="DataDir" Name="data"/>
+            <Directory Id="LogsDir" Name="logs"/>
+            <Directory Id="CacheDir" Name="cache"/>
+          </Directory>
+        </Directory>
+      </Directory>
+
+      <!-- Start Menu shortcut folder -->
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="WovenModelProgramsFolder" Name="Woven Model"/>
+      </Directory>
+
+      <!-- Desktop folder for shortcut -->
+      <Directory Id="DesktopFolder"/>
+    </Directory>
+
+    <!-- Feature: Main application -->
+    <Feature Id="StratumFeature" Title="Stratum" Level="1">
+      <ComponentGroupRef Id="StratumComponents"/>
+      <ComponentRef Id="StartMenuShortcut"/>
+      <ComponentRef Id="DesktopShortcut"/>
+      <ComponentRef Id="RegistryEntries"/>
+    </Feature>
+
+    <!-- Components: files and shortcuts -->
+    <ComponentGroup Id="StratumComponents" Directory="INSTALLDIR">
+      <!-- Main executable -->
+      <Component Id="StratumExe" Guid="{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}">
+        <File Id="StratumEXE" Name="Stratum.exe" KeyPath="yes"
+              DiskId="1" Source="..\..\stratum\dist\Stratum.exe"/>
+        <!-- Also deploy the license.lic if it exists next to the EXE -->
+        <File Id="LicenseLic" Name="license.lic" KeyPath="no"
+              DiskId="1" Source="..\..\stratum\license.lic"/>
+      </Component>
+
+      <!-- Data directories (ensure they exist at install time) -->
+      <Component Id="ProfilesDir_cmp" Guid="{B2C3D4E5-F6A7-8901-BCDE-F12345678901}">
+        <CreateFolder Directory="ProfilesDir"/>
+      </Component>
+      <Component Id="ReportsDir_cmp" Guid="{C3D4E5F6-A7B8-9012-CDEF-123456789012}">
+        <CreateFolder Directory="ReportsDir"/>
+      </Component>
+      <Component Id="DataDir_cmp" Guid="{D4E5F6A7-B8C9-0123-DEF1-234567890123}">
+        <CreateFolder Directory="DataDir"/>
+      </Component>
+      <Component Id="LogsDir_cmp" Guid="{E5F6A7B8-C9D0-1234-EF12-345678901234}">
+        <CreateFolder Directory="LogsDir"/>
+      </Component>
+      <Component Id="CacheDir_cmp" Guid="{F6A7B8C9-D0E1-2345-F123-456789012345}">
+        <CreateFolder Directory="CacheDir"/>
+      </Component>
+    </ComponentGroup>
+
+    <!-- Start Menu shortcut -->
+    <Component Id="StartMenuShortcut" Directory="WovenModelProgramsFolder"
+               Guid="{A7B8C9D0-E1F2-3456-789A-BCDEF0123456}">
+      <Shortcut Id="StratumStartMenu"
+                Name="Stratum"
+                Description="Stratum — AI Trading Strategy Analyzer"
+                Target="[#StratumEXE]"
+                WorkingDirectory="INSTALLDIR"/>
+      <Shortcut Id="UninstallStartMenu"
+                Name="Uninstall Stratum"
+                Description="Remove Stratum from your computer"
+                Target="[System64Folder]msiexec.exe"
+                Arguments="/x [ProductCode]"/>
+      <RemoveFolder Id="RemoveWovenModelProgramsFolder"
+                    Directory="WovenModelProgramsFolder"
+                    On="uninstall"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="installed"
+                     Type="integer"
+                     Value="1"
+                     KeyPath="yes"/>
+    </Component>
+
+    <!-- Desktop shortcut -->
+    <Component Id="DesktopShortcut" Directory="DesktopFolder"
+               Guid="{B8C9D0E1-F2A3-4567-89AB-CDEF01234567}">
+      <Shortcut Id="StratumDesktop"
+                Name="Stratum"
+                Description="Stratum — AI Trading Strategy Analyzer"
+                Target="[#StratumEXE]"
+                WorkingDirectory="INSTALLDIR"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="desktop_shortcut"
+                     Type="integer"
+                     Value="1"
+                     KeyPath="yes"/>
+    </Component>
+
+    <!-- Registry entries for license file path and application metadata -->
+    <Component Id="RegistryEntries" Directory="INSTALLDIR"
+               Guid="{C9D0E1F2-A3B4-5678-9ABC-DEF012345678}">
+      <!-- License file path (user can update via Stratum preferences) -->
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="LicensePath"
+                     Type="string"
+                     Value="[INSTALLDIR]license.lic"
+                     KeyPath="yes"/>
+      <!-- Application version -->
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="Version"
+                     Type="string"
+                     Value="1.3.0"/>
+      <!-- Installation date (stored as string) -->
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="InstallDate"
+                     Type="string"
+                     Value="2025-01-01"/>
+      <!-- Company -->
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="Manufacturer"
+                     Type="string"
+                     Value="Woven Model"/>
+      <!-- Data directories for app reference -->
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="ProfilesPath"
+                     Type="string"
+                     Value="[ProfilesDir]"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="ReportsPath"
+                     Type="string"
+                     Value="[ReportsDir]"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="DataPath"
+                     Type="string"
+                     Value="[DataDir]"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="LogsPath"
+                     Type="string"
+                     Value="[LogsDir]"/>
+      <RegistryValue Root="HKCU"
+                     Key="Software\Woven Model\Stratum"
+                     Name="CachePath"
+                     Type="string"
+                     Value="[CacheDir]"/>
+    </Component>
+
+    <!-- Uninstall registry entries for Add/Remove Programs -->
+    <Property Id="ARPPRODUCTICON" Value="StratumEXE"/>
+    <Property Id="ARPHELPLINK" Value="https://wovenmodel.com/support"/>
+    <Property Id="ARPURLINFOABOUT" Value="https://wovenmodel.com"/>
+    <Property Id="ARPCOMMENTS" Value="AI-powered trading strategy backtesting and analysis tool."/>
+    <Property Id="ARPCONTACT" Value="jude@wovenmodel.com"/>
+
+    <!-- UI: Minimal wizard -->
+    <UI>
+      <UIRef Id="WixUI_Minimal"/>
+    </UI>
+
+    <!-- Licensing: EULA if available -->
+    <WixVariable Id="WixUILicenseRtf" Value=""/>
+  </Product>
+</Wix>

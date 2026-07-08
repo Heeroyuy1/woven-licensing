@@ -1,0 +1,21 @@
+timestamp,symbol,signal,price,confidence,metadata
+2026-05-11T04:00:00+00:00,MARA,hold,13.390000343322754,0.0,{'reason': 'insufficient_data'}
+2026-05-12T04:00:00+00:00,MARA,hold,12.720000267028809,0.0,{'reason': 'insufficient_data'}
+2026-05-13T04:00:00+00:00,MARA,hold,12.75,0.0,{'reason': 'insufficient_data'}
+2026-05-14T04:00:00+00:00,MARA,hold,13.289999961853027,0.0,{'reason': 'insufficient_data'}
+2026-05-15T04:00:00+00:00,MARA,hold,12.4399995803833,0.0,{'reason': 'insufficient_data'}
+2026-05-18T04:00:00+00:00,MARA,hold,12.180000305175781,0.0,{'reason': 'insufficient_data'}
+2026-05-19T04:00:00+00:00,MARA,hold,12.4399995803833,0.0,{'reason': 'insufficient_data'}
+2026-05-20T04:00:00+00:00,MARA,hold,13.149999618530273,0.0,{'reason': 'insufficient_data'}
+2026-05-21T04:00:00+00:00,MARA,hold,13.550000190734863,0.0,{'reason': 'insufficient_data'}
+2026-05-22T04:00:00+00:00,MARA,hold,13.8100004196167,0.0,{'reason': 'insufficient_data'}
+2026-05-26T04:00:00+00:00,MARA,hold,14.279999732971191,0.0,{'reason': 'insufficient_data'}
+2026-05-27T04:00:00+00:00,MARA,hold,14.329999923706055,0.0,{'reason': 'insufficient_data'}
+2026-05-28T04:00:00+00:00,MARA,hold,14.069999694824219,0.0,{'reason': 'insufficient_data'}
+2026-05-29T04:00:00+00:00,MARA,hold,14.380000114440918,0.0,{'reason': 'insufficient_data'}
+2026-06-01T04:00:00+00:00,MARA,hold,14.850000381469727,0.0,{'reason': 'insufficient_data'}
+2026-06-02T04:00:00+00:00,MARA,hold,14.279999732971191,0.0,{'reason': 'insufficient_data'}
+2026-06-03T04:00:00+00:00,MARA,hold,13.960000038146973,0.0,{'reason': 'insufficient_data'}
+2026-06-04T04:00:00+00:00,MARA,hold,13.880000114440918,0.0,{'reason': 'insufficient_data'}
+2026-06-05T04:00:00+00:00,MARA,hold,12.319999694824219,0.0,{'reason': 'insufficient_data'}
+2026-06-08T04:00:00+00:00,MARA,hold,13.779999732971191,0.0,{'reason': 'insufficient_data'}

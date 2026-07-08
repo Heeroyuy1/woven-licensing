@@ -1,0 +1,93 @@
+{
+  "product": "Harper",
+  "platform": "Woven Model Market Intelligence",
+  "generated_at": "2026-06-09T13:19:46.424807",
+  "performance": {
+    "AMD": {
+      "initial_capital": 100000.0,
+      "final_equity": 102977.06,
+      "total_return_pct": 2.98,
+      "total_realized_pnl": 2977.06,
+      "cash": 102977.06,
+      "total_trades": 75,
+      "win_count": 30,
+      "loss_count": 45,
+      "win_rate": 40.0,
+      "avg_win": 737.44,
+      "avg_loss": 425.47,
+      "pl_ratio": 1.73,
+      "max_drawdown_pct": 14.52,
+      "sharpe_ratio": 0.14,
+      "start_date": "2020-01-02 05:00:00+00:00",
+      "end_date": "2025-12-30 05:00:00+00:00",
+      "total_bars": 1507
+    }
+  },
+  "patterns": [
+    {
+      "pattern_id": "AMD_volspike_1d",
+      "type": "volume_spike",
+      "symbol": "AMD",
+      "description": "AMD volume spikes (>2x avg): next day avg 0.61% (bullish), 18/33 follow direction",
+      "confidence": 1.0,
+      "win_rate": 0.5454545454545454,
+      "probability": 0.5454545454545454,
+      "direction": "bullish",
+      "p_value": null,
+      "metadata": {
+        "avg_forward_return_1d_pct": 0.61,
+        "avg_forward_return_5d_pct": 3.06,
+        "spike_threshold": "2x_20d_avg"
+      }
+    },
+    {
+      "pattern_id": "AMD_dow_bullish_0",
+      "type": "day_of_week",
+      "symbol": "AMD",
+      "description": "AMD Mondays: avg bullish 0.56% (positive 155/281 days)",
+      "confidence": 0.994,
+      "win_rate": 0.5516014234875445,
+      "probability": 0.5516014234875445,
+      "direction": "bullish",
+      "p_value": 0.0064,
+      "metadata": {
+        "day_of_week": 0,
+        "day_name": "Monday",
+        "avg_return_pct": 0.56,
+        "t_statistic": 2.746
+      }
+    },
+    {
+      "pattern_id": "AMD_rsi_oversold",
+      "type": "technical_setup",
+      "symbol": "AMD",
+      "description": "AMD RSI<30: 5-day forward avg 0.21% (bullish), 74/135 follow direction",
+      "confidence": 0.5,
+      "win_rate": 0.5481481481481482,
+      "probability": 0.5481481481481482,
+      "direction": "bullish",
+      "p_value": 0.1508,
+      "metadata": {
+        "rsi_condition": "RSI<30",
+        "forward_period_days": 5,
+        "avg_fwd_return_pct": 0.21
+      }
+    },
+    {
+      "pattern_id": "AMD_rsi_overbought",
+      "type": "technical_setup",
+      "symbol": "AMD",
+      "description": "AMD RSI>70: 5-day forward avg 1.10% (bullish), 125/243 follow direction",
+      "confidence": 0.5,
+      "win_rate": 0.51440329218107,
+      "probability": 0.51440329218107,
+      "direction": "bullish",
+      "p_value": 0.3502,
+      "metadata": {
+        "rsi_condition": "RSI>70",
+        "forward_period_days": 5,
+        "avg_fwd_return_pct": 1.1
+      }
+    }
+  ]
+}

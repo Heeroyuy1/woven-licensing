@@ -1,0 +1,2288 @@
+2026-07-06 06:48:07,563 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-06 06:56:55,657 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-06 06:57:37,458 | INFO     | Stratum.Config | Loaded profile 'default' from C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 06:57:37,459 | INFO     | Stratum.UI | Configuration loaded.
+2026-07-06 06:57:37,461 | INFO     | Stratum.UI | Stratum initialized. Trial period expired. Please activate a license key.
+2026-07-06 06:59:32,584 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 06:59:32,584 | INFO     | Stratum.UI | Configuration saved.
+2026-07-06 06:59:32,589 | INFO     | Stratum.UI | Fetching data for 5 symbols...
+2026-07-06 06:59:32,750 | INFO     | Stratum.DataLoader | Loaded AAPL from cache: 1507 bars
+2026-07-06 06:59:32,756 | INFO     | Stratum.DataLoader | Loaded TSLA from cache: 1507 bars
+2026-07-06 06:59:32,763 | INFO     | Stratum.DataLoader | Loaded NVDA from cache: 1507 bars
+2026-07-06 06:59:32,769 | INFO     | Stratum.DataLoader | Loaded GOOGL from cache: 1507 bars
+2026-07-06 06:59:32,775 | INFO     | Stratum.DataLoader | Loaded AMD from cache: 1507 bars
+2026-07-06 06:59:32,777 | INFO     | Stratum.UI | Data loaded: AAPL(1507 bars), TSLA(1507 bars), NVDA(1507 bars), GOOGL(1507 bars), AMD(1507 bars)
+2026-07-06 06:59:32,787 | INFO     | Stratum.UI | Running backtest...
+2026-07-06 06:59:33,719 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-06 06:59:33,721 | INFO     | Stratum.UI | Analysis complete.
+2026-07-06 06:59:33,723 | INFO     | Stratum.UI | Backtest complete: 5 symbols analyzed.
+2026-07-06 07:00:32,398 | INFO     | Stratum.UI | Optimizing AAPL...
+2026-07-06 07:00:32,402 | INFO     | Stratum.DataLoader | Loaded AAPL from cache: 1507 bars
+2026-07-06 07:00:32,402 | INFO     | Stratum.Optimizer | Optimizing AAPL: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 07:00:33,826 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 07:00:35,242 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 07:00:36,715 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 07:00:38,294 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 07:00:39,704 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 07:00:41,133 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 07:00:42,548 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 07:00:44,102 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 07:00:45,539 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 07:00:47,014 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 07:00:49,621 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 07:00:51,588 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 07:00:53,304 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 07:00:55,301 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 07:00:57,653 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 07:01:00,426 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 07:01:02,551 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 07:01:04,397 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 07:01:06,230 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 07:01:08,209 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 07:01:10,092 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 07:01:12,124 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 07:01:13,660 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 07:01:15,211 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 07:01:16,656 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 07:01:18,302 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 07:01:19,845 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 07:01:21,254 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 07:01:22,794 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 07:01:24,212 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 07:01:25,609 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 07:01:27,095 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 07:01:28,611 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 07:01:30,291 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 07:01:31,689 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 07:01:33,080 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 07:01:34,469 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 07:01:35,907 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 07:01:37,358 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 07:01:38,757 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 07:01:40,149 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 07:01:41,523 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 07:01:42,902 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 07:01:44,279 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 07:01:45,671 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 07:01:47,106 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 07:01:48,849 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 07:01:50,301 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 07:01:51,767 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 07:01:53,288 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 07:01:54,660 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 07:01:56,109 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 07:01:57,590 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 07:01:59,231 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 07:02:00,694 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 07:02:02,096 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 07:02:03,565 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 07:02:04,980 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 07:02:06,561 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 07:02:08,175 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 07:02:09,739 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 07:02:11,158 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 07:02:11,909 | INFO     | Stratum.Optimizer | Optimization complete for AAPL: best score=0.1455477
+2026-07-06 07:02:11,910 | INFO     | Stratum.UI |   AAPL best: score=0.15, return=9.00%
+2026-07-06 07:02:11,910 | INFO     | Stratum.UI | Optimizing TSLA...
+2026-07-06 07:02:11,915 | INFO     | Stratum.DataLoader | Loaded TSLA from cache: 1507 bars
+2026-07-06 07:02:11,915 | INFO     | Stratum.Optimizer | Optimizing TSLA: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 07:02:13,346 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 07:02:14,759 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 07:02:16,166 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 07:02:17,660 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 07:02:19,409 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 07:02:20,927 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 07:02:22,481 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 07:02:24,011 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 07:02:25,434 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 07:02:26,893 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 07:02:28,461 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 07:02:30,421 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 07:02:32,184 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 07:02:33,954 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 07:02:35,694 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 07:02:37,905 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 07:02:40,295 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 07:02:42,649 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 07:02:44,666 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 07:02:46,473 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 07:02:48,728 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 07:02:51,058 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 07:02:53,009 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 07:02:54,820 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 07:02:56,564 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 07:02:58,417 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 07:03:00,609 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 07:03:02,362 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 07:03:04,133 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 07:03:05,863 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 07:03:07,717 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 07:03:09,437 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 07:03:11,184 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 07:03:12,885 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 07:03:14,590 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 07:03:16,275 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 07:03:18,112 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 07:03:20,464 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 07:03:22,191 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 07:03:24,006 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 07:03:25,733 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 07:03:27,509 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 07:03:29,507 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 07:03:31,232 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 07:03:33,063 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 07:03:34,834 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 07:03:36,567 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 07:03:38,434 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 07:03:40,314 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 07:03:42,011 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 07:03:43,734 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 07:03:45,437 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 07:03:47,159 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 07:03:49,369 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 07:03:51,190 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 07:03:52,811 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 07:03:54,493 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 07:03:56,256 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 07:03:58,097 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 07:04:00,373 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 07:04:02,148 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 07:04:03,976 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 07:04:04,860 | INFO     | Stratum.Optimizer | Optimization complete for TSLA: best score=0.0859398
+2026-07-06 07:04:04,861 | INFO     | Stratum.UI |   TSLA best: score=0.09, return=-0.07%
+2026-07-06 07:04:04,862 | INFO     | Stratum.UI | Optimizing NVDA...
+2026-07-06 07:04:04,866 | INFO     | Stratum.DataLoader | Loaded NVDA from cache: 1507 bars
+2026-07-06 07:04:04,866 | INFO     | Stratum.Optimizer | Optimizing NVDA: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 07:04:06,589 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 07:04:08,423 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 07:04:10,106 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 07:04:12,010 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 07:04:13,646 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 07:04:15,272 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 07:04:16,903 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 07:04:19,182 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 07:04:21,082 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 07:04:22,807 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 07:04:24,503 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 07:04:26,147 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 07:04:27,855 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 07:04:29,845 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 07:04:31,464 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 07:04:33,081 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 07:04:34,732 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 07:04:36,324 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 07:04:38,052 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 07:04:39,802 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 07:04:41,781 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 07:04:43,674 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 07:04:45,469 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 07:04:47,119 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 07:04:49,452 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 07:04:51,379 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 07:04:53,239 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 07:04:54,908 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 07:04:56,426 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 07:04:57,923 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 07:04:59,739 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 07:05:01,279 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 07:05:02,710 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 07:05:04,202 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 07:05:05,615 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 07:05:07,053 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 07:05:08,550 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 07:05:10,002 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 07:05:11,558 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 07:05:13,067 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 07:05:14,499 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 07:05:15,986 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 07:05:17,446 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 07:05:19,159 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 07:05:20,707 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 07:05:22,258 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 07:05:23,699 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 07:05:25,119 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 07:05:26,599 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 07:05:28,041 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 07:05:29,740 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 07:05:31,137 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 07:05:32,673 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 07:05:34,158 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 07:05:35,584 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 07:05:37,031 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 07:05:38,609 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 07:05:40,030 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 07:05:41,585 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 07:05:42,972 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 07:05:44,405 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 07:05:45,822 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 07:05:46,513 | INFO     | Stratum.Optimizer | Optimization complete for NVDA: best score=0.1864987047
+2026-07-06 07:05:46,514 | INFO     | Stratum.UI |   NVDA best: score=0.19, return=12.09%
+2026-07-06 07:05:46,514 | INFO     | Stratum.UI | Optimizing GOOGL...
+2026-07-06 07:05:46,517 | INFO     | Stratum.DataLoader | Loaded GOOGL from cache: 1507 bars
+2026-07-06 07:05:46,517 | INFO     | Stratum.Optimizer | Optimizing GOOGL: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 07:05:48,012 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 07:05:49,831 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 07:05:51,378 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 07:05:52,796 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 07:05:54,318 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 07:05:55,743 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 07:05:57,276 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 07:05:58,896 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 07:06:00,407 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 07:06:01,852 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 07:06:03,267 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 07:06:04,716 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 07:06:06,159 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 07:06:07,734 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 07:06:09,300 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 07:06:10,828 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 07:06:12,302 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 07:06:13,738 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 07:06:15,183 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 07:06:16,581 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 07:06:18,086 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 07:06:19,757 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 07:06:21,154 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 07:06:22,569 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 07:06:24,014 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 07:06:25,543 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 07:06:27,062 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 07:06:28,628 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 07:06:30,283 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 07:06:31,697 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 07:06:33,109 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 07:06:34,508 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 07:06:36,030 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 07:06:37,514 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 07:06:39,148 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 07:06:40,852 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 07:06:42,449 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 07:06:44,152 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 07:06:45,877 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 07:06:47,528 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 07:06:50,083 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 07:06:51,689 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 07:06:53,309 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 07:06:54,902 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 07:06:56,857 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 07:06:58,609 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 07:07:00,472 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 07:07:02,087 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 07:07:03,668 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 07:07:05,464 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 07:07:07,077 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 07:07:08,846 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 07:07:10,675 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 07:07:12,300 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 07:07:13,936 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 07:07:15,524 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 07:07:17,095 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 07:07:19,285 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 07:07:21,049 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 07:07:22,605 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 07:07:24,231 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 07:07:25,803 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 07:07:26,626 | INFO     | Stratum.Optimizer | Optimization complete for GOOGL: best score=0.101727604
+2026-07-06 07:07:26,627 | INFO     | Stratum.UI |   GOOGL best: score=0.10, return=4.05%
+2026-07-06 07:07:26,628 | INFO     | Stratum.UI | Optimizing AMD...
+2026-07-06 07:07:26,632 | INFO     | Stratum.DataLoader | Loaded AMD from cache: 1507 bars
+2026-07-06 07:07:26,633 | INFO     | Stratum.Optimizer | Optimizing AMD: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 07:07:28,367 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 07:07:30,311 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 07:07:31,920 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 07:07:33,534 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 07:07:35,173 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 07:07:36,965 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 07:07:38,773 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 07:07:40,452 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 07:07:42,154 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 07:07:43,842 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 07:07:45,574 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 07:07:47,270 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 07:07:49,639 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 07:07:51,414 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 07:07:53,044 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 07:07:54,722 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 07:07:56,405 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 07:07:58,103 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 07:08:00,300 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 07:08:01,947 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 07:08:03,627 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 07:08:05,384 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 07:08:07,058 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 07:08:08,762 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 07:08:10,391 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 07:08:12,000 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 07:08:13,598 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 07:08:15,244 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 07:08:17,016 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 07:08:19,227 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 07:08:21,021 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 07:08:22,638 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 07:08:24,259 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 07:08:25,876 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 07:08:27,598 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 07:08:29,668 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 07:08:31,320 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 07:08:32,897 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 07:08:34,486 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 07:08:36,078 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 07:08:37,745 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 07:08:39,327 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 07:08:40,922 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 07:08:42,529 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 07:08:44,116 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 07:08:45,709 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 07:08:47,341 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 07:08:49,664 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 07:08:51,450 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 07:08:53,021 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 07:08:54,658 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 07:08:56,223 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 07:08:57,912 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 07:09:00,053 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 07:09:01,710 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 07:09:03,349 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 07:09:05,015 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 07:09:06,698 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 07:09:08,467 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 07:09:10,076 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 07:09:11,738 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 07:09:13,357 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 07:09:14,162 | INFO     | Stratum.Optimizer | Optimization complete for AMD: best score=0.145416416
+2026-07-06 07:09:14,166 | INFO     | Stratum.UI |   AMD best: score=0.15, return=6.10%
+2026-07-06 07:09:14,179 | INFO     | Stratum.UI | Optimization complete for 5 symbols.
+2026-07-06 14:06:39,954 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 14:06:39,955 | INFO     | Stratum.UI | Configuration saved.
+2026-07-06 14:06:39,971 | INFO     | Stratum.UI | Fetching data for 8 symbols...
+2026-07-06 14:06:40,003 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-06 14:06:40,011 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-06 14:06:40,017 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 985 bars
+2026-07-06 14:06:40,024 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 1068 bars
+2026-07-06 14:06:40,030 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 1507 bars
+2026-07-06 14:06:40,034 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 1507 bars
+2026-07-06 14:06:40,038 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-06 14:06:40,043 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-06 14:06:40,046 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(985 bars), GFAI(1068 bars), EXK(1507 bars), SVM(1507 bars), SERV(455 bars), BE(491 bars)
+2026-07-06 14:06:40,101 | INFO     | Stratum.UI | Running backtest...
+2026-07-06 14:06:41,146 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-06 14:06:41,146 | INFO     | Stratum.UI | Analysis complete.
+2026-07-06 14:06:41,155 | INFO     | Stratum.UI | Backtest complete: 8 symbols analyzed.
+2026-07-06 14:07:12,279 | INFO     | Stratum.UI | Optimizing FCEL...
+2026-07-06 14:07:12,285 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-06 14:07:12,285 | INFO     | Stratum.Optimizer | Optimizing FCEL: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:07:12,825 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:07:13,289 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:07:13,751 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:07:14,231 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:07:14,755 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:07:15,277 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:07:15,816 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:07:16,311 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:07:16,776 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:07:17,266 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:07:17,861 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:07:18,415 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:07:19,085 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:07:19,903 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:07:20,477 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:07:21,097 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:07:21,673 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:07:22,199 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:07:22,757 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:07:23,395 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:07:23,993 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:07:24,547 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:07:25,139 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:07:25,666 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:07:26,210 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:07:26,794 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:07:27,371 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:07:27,996 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:07:28,567 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:07:29,114 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:07:29,750 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:07:30,700 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:07:31,250 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:07:31,830 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:07:32,380 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:07:32,940 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:07:33,573 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:07:34,134 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:07:34,773 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:07:35,405 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:07:36,042 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:07:36,666 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:07:37,204 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:07:37,773 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:07:38,322 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:07:38,994 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:07:39,675 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:07:40,283 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:07:40,844 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:07:41,407 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:07:42,016 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:07:42,609 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:07:43,229 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:07:43,905 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:07:44,517 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:07:45,092 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:07:45,744 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:07:46,336 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:07:46,900 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:07:47,427 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:07:48,028 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:07:48,604 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:07:48,902 | INFO     | Stratum.Optimizer | Optimization complete for FCEL: best score=0.3083254528
+2026-07-06 14:07:48,902 | INFO     | Stratum.UI |   FCEL best: score=0.31, return=9.79%
+2026-07-06 14:07:48,903 | INFO     | Stratum.UI | Optimizing CLSK...
+2026-07-06 14:07:48,909 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-06 14:07:48,910 | INFO     | Stratum.Optimizer | Optimizing CLSK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:07:50,084 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:07:50,767 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:07:51,571 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:07:52,266 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:07:52,823 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:07:53,437 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:07:54,056 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:07:54,705 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:07:55,400 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:07:56,072 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:07:56,754 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:07:57,368 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:07:58,026 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:07:58,695 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:07:59,311 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:08:00,225 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:08:00,785 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:08:01,323 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:08:01,890 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:08:02,439 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:08:02,988 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:08:03,583 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:08:04,147 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:08:04,793 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:08:05,405 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:08:05,997 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:08:06,545 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:08:07,101 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:08:07,637 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:08:08,212 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:08:08,818 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:08:09,380 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:08:09,925 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:08:10,535 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:08:11,118 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:08:11,673 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:08:12,319 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:08:12,905 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:08:13,456 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:08:13,995 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:08:14,537 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:08:15,082 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:08:15,621 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:08:16,271 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:08:16,887 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:08:17,460 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:08:18,036 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:08:18,611 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:08:19,347 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:08:20,291 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:08:21,070 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:08:21,847 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:08:22,451 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:08:22,990 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:08:23,533 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:08:24,115 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:08:24,654 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:08:25,300 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:08:25,908 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:08:26,446 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:08:27,002 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:08:27,565 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:08:27,855 | INFO     | Stratum.Optimizer | Optimization complete for CLSK: best score=0.23234682
+2026-07-06 14:08:27,856 | INFO     | Stratum.UI |   CLSK best: score=0.23, return=7.27%
+2026-07-06 14:08:27,857 | INFO     | Stratum.UI | Optimizing KSCP...
+2026-07-06 14:08:27,863 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 985 bars
+2026-07-06 14:08:27,863 | INFO     | Stratum.Optimizer | Optimizing KSCP: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:08:29,091 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:08:30,771 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:08:31,932 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:08:33,142 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:08:34,320 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:08:35,548 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:08:36,763 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:08:37,956 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:08:39,206 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:08:40,344 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:08:41,515 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:08:42,687 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:08:43,869 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:08:45,029 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:08:46,225 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:08:47,466 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:08:48,711 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:08:50,390 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:08:52,013 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:08:53,351 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:08:54,561 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:08:55,710 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:08:56,842 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:08:58,035 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:08:59,239 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:09:00,884 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:09:02,089 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:09:03,264 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:09:04,437 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:09:05,579 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:09:06,738 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:09:07,942 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:09:09,222 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:09:10,375 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:09:11,499 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:09:12,703 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:09:13,940 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:09:15,272 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:09:16,585 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:09:17,864 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:09:19,185 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:09:21,079 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:09:22,519 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:09:23,792 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:09:24,967 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:09:26,131 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:09:27,271 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:09:28,591 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:09:30,165 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:09:31,489 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:09:32,660 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:09:33,816 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:09:34,944 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:09:36,124 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:09:37,375 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:09:38,666 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:09:39,854 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:09:41,073 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:09:42,236 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:09:43,396 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:09:44,557 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:09:45,694 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:09:46,259 | INFO     | Stratum.Optimizer | Optimization complete for KSCP: best score=0.21139961699999998
+2026-07-06 14:09:46,260 | INFO     | Stratum.UI |   KSCP best: score=0.21, return=12.19%
+2026-07-06 14:09:46,261 | INFO     | Stratum.UI | Optimizing GFAI...
+2026-07-06 14:09:46,266 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 1068 bars
+2026-07-06 14:09:46,266 | INFO     | Stratum.Optimizer | Optimizing GFAI: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:09:47,631 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:09:49,023 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:09:50,940 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:09:52,453 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:09:53,889 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:09:55,133 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:09:56,357 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:09:57,675 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:09:58,972 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:10:00,751 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:10:01,993 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:10:03,279 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:10:04,623 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:10:06,110 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:10:07,608 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:10:09,121 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:10:10,457 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:10:11,721 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:10:13,207 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:10:14,512 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:10:15,819 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:10:17,082 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:10:18,332 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:10:20,165 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:10:21,868 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:10:23,144 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:10:24,443 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:10:25,699 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:10:27,142 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:10:28,466 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:10:30,257 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:10:31,761 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:10:33,154 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:10:34,527 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:10:35,828 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:10:37,151 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:10:38,478 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:10:39,841 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:10:41,157 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:10:42,478 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:10:43,808 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:10:45,130 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:10:46,417 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:10:47,706 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:10:49,237 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:10:51,213 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:10:52,746 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:10:54,022 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:10:55,313 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:10:56,585 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:10:57,904 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:10:59,200 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:11:01,305 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:11:02,642 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:11:04,002 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:11:05,407 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:11:06,729 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:11:08,043 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:11:09,773 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:11:11,070 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:11:12,349 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:11:13,597 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:11:14,216 | INFO     | Stratum.Optimizer | Optimization complete for GFAI: best score=0.19633893719999998
+2026-07-06 14:11:14,217 | INFO     | Stratum.UI |   GFAI best: score=0.20, return=10.54%
+2026-07-06 14:11:14,218 | INFO     | Stratum.UI | Optimizing EXK...
+2026-07-06 14:11:14,223 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 1507 bars
+2026-07-06 14:11:14,224 | INFO     | Stratum.Optimizer | Optimizing EXK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:11:16,071 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:11:17,920 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:11:20,542 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:11:22,747 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:11:24,658 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:11:26,464 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:11:28,231 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:11:30,579 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:11:32,436 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:11:34,168 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:11:35,977 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:11:37,831 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:11:39,692 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:11:41,489 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:11:43,208 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:11:45,072 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:11:47,144 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:11:49,337 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:11:51,996 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:11:53,817 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:11:55,595 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:11:57,385 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:11:59,273 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:12:01,493 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:12:03,280 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:12:05,045 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:12:06,822 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:12:08,854 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:12:10,722 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:12:12,583 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:12:14,670 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:12:16,500 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:12:18,405 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:12:21,057 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:12:23,168 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:12:25,127 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:12:27,017 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:12:28,961 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:12:31,687 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:12:33,413 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:12:35,233 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:12:37,061 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:12:39,049 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:12:40,924 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:12:42,828 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:12:44,706 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:12:46,417 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:12:48,362 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:12:50,913 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:12:52,967 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:12:54,717 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:12:56,426 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:12:58,201 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:13:00,546 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:13:02,337 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:13:04,171 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:13:06,020 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:13:07,865 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:13:09,784 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:13:11,496 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:13:13,251 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:13:15,031 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:13:16,071 | INFO     | Stratum.Optimizer | Optimization complete for EXK: best score=0.25866908
+2026-07-06 14:13:16,072 | INFO     | Stratum.UI |   EXK best: score=0.26, return=19.12%
+2026-07-06 14:13:16,072 | INFO     | Stratum.UI | Optimizing SVM...
+2026-07-06 14:13:16,079 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 1507 bars
+2026-07-06 14:13:16,080 | INFO     | Stratum.Optimizer | Optimizing SVM: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:13:17,946 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:13:20,352 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:13:22,564 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:13:24,314 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:13:26,034 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:13:27,817 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:13:30,125 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:13:32,025 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:13:33,848 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:13:35,841 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:13:37,813 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:13:39,675 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:13:41,381 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:13:43,122 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:13:44,911 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:13:46,691 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:13:48,444 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:13:50,926 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:13:53,085 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:13:54,788 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:13:56,510 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:13:58,423 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:14:00,824 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:14:02,856 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:14:04,882 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:14:06,638 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:14:08,568 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:14:10,781 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:14:12,597 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:14:14,351 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:14:16,082 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:14:17,796 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:14:20,123 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:14:22,371 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:14:24,106 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:14:25,850 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:14:27,763 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:14:29,786 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:14:31,775 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:14:33,562 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:14:35,321 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:14:37,170 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:14:38,952 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:14:40,669 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:14:42,420 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:14:44,194 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:14:45,871 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:14:47,694 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:14:50,149 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:14:52,352 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:14:54,151 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:14:55,984 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:14:57,844 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:14:59,821 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:15:01,675 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:15:03,420 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:15:05,118 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:15:06,889 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:15:09,248 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:15:11,380 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:15:13,548 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:15:15,660 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:15:16,732 | INFO     | Stratum.Optimizer | Optimization complete for SVM: best score=0.1592337204
+2026-07-06 14:15:16,733 | INFO     | Stratum.UI |   SVM best: score=0.16, return=3.14%
+2026-07-06 14:15:16,734 | INFO     | Stratum.UI | Optimizing SERV...
+2026-07-06 14:15:16,738 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-06 14:15:16,739 | INFO     | Stratum.Optimizer | Optimizing SERV: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:15:17,421 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:15:18,107 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:15:18,800 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:15:19,837 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:15:20,662 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:15:21,444 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:15:22,221 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:15:22,865 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:15:23,541 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:15:24,213 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:15:24,887 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:15:25,534 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:15:26,214 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:15:26,887 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:15:27,563 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:15:28,267 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:15:28,904 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:15:29,593 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:15:30,508 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:15:31,173 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:15:31,835 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:15:32,502 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:15:33,138 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:15:33,799 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:15:34,456 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:15:35,114 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:15:35,765 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:15:36,402 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:15:37,070 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:15:37,716 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:15:38,409 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:15:39,080 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:15:39,704 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:15:40,355 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:15:40,992 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:15:41,632 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:15:42,253 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:15:42,849 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:15:43,483 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:15:44,160 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:15:44,777 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:15:45,444 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:15:46,086 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:15:46,683 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:15:47,221 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:15:47,778 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:15:48,333 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:15:48,969 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:15:49,875 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:15:50,598 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:15:51,359 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:15:52,007 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:15:52,556 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:15:53,095 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:15:53,617 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:15:54,191 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:15:54,894 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:15:55,498 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:15:56,015 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:15:56,524 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:15:57,064 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:15:57,610 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:15:57,902 | INFO     | Stratum.Optimizer | Optimization complete for SERV: best score=0.12260066
+2026-07-06 14:15:57,903 | INFO     | Stratum.UI |   SERV best: score=0.12, return=0.75%
+2026-07-06 14:15:57,903 | INFO     | Stratum.UI | Optimizing BE...
+2026-07-06 14:15:57,908 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-06 14:15:57,909 | INFO     | Stratum.Optimizer | Optimizing BE: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-06 14:15:58,557 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-06 14:15:59,140 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-06 14:15:59,833 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-06 14:16:00,800 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-06 14:16:01,482 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-06 14:16:02,107 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-06 14:16:02,731 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-06 14:16:03,373 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-06 14:16:04,003 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-06 14:16:04,578 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-06 14:16:05,127 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-06 14:16:05,714 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-06 14:16:06,263 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-06 14:16:06,855 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-06 14:16:07,420 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-06 14:16:07,981 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-06 14:16:08,565 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-06 14:16:09,182 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-06 14:16:09,759 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-06 14:16:10,315 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-06 14:16:10,879 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-06 14:16:11,431 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-06 14:16:11,999 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-06 14:16:12,551 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-06 14:16:13,106 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-06 14:16:13,672 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-06 14:16:14,244 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-06 14:16:14,799 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-06 14:16:15,349 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-06 14:16:15,940 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-06 14:16:16,502 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-06 14:16:17,123 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-06 14:16:17,687 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-06 14:16:18,292 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-06 14:16:18,961 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-06 14:16:19,913 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-06 14:16:20,708 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-06 14:16:21,480 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-06 14:16:22,104 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-06 14:16:22,676 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-06 14:16:23,265 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-06 14:16:23,855 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-06 14:16:24,465 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-06 14:16:25,034 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-06 14:16:25,588 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-06 14:16:26,134 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-06 14:16:26,677 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-06 14:16:27,226 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-06 14:16:27,859 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-06 14:16:28,435 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-06 14:16:29,028 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-06 14:16:29,685 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-06 14:16:30,694 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-06 14:16:31,283 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-06 14:16:31,851 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-06 14:16:32,427 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-06 14:16:33,038 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-06 14:16:33,611 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-06 14:16:34,270 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-06 14:16:34,907 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-06 14:16:35,517 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-06 14:16:36,109 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-06 14:16:36,408 | INFO     | Stratum.Optimizer | Optimization complete for BE: best score=0.2252899152
+2026-07-06 14:16:36,414 | INFO     | Stratum.UI |   BE best: score=0.23, return=6.89%
+2026-07-06 14:16:36,419 | INFO     | Stratum.UI | Optimization complete for 8 symbols.
+2026-07-06 20:06:45,547 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-06 20:06:46,582 | INFO     | Stratum.Config | Loaded profile 'default' from C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 20:06:46,583 | INFO     | Stratum.UI | Configuration loaded.
+2026-07-06 20:06:46,585 | INFO     | Stratum.UI | Stratum initialized. Licensed | Key: D9ZPD-ZO... | Expires: 2027-07-06
+2026-07-06 21:12:01,579 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-06 21:12:02,865 | INFO     | Stratum.Config | Loaded profile 'default' from C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 21:12:02,866 | INFO     | Stratum.UI | Configuration loaded.
+2026-07-06 21:12:02,870 | INFO     | Stratum.UI | Stratum initialized. 🔐 Licensed | Key: D9ZPD-ZO... | Expires: 2027-07-06
+2026-07-06 21:12:04,316 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-06 21:12:05,091 | INFO     | Stratum.Config | Loaded profile 'default' from C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-06 21:12:05,091 | INFO     | Stratum.UI | Configuration loaded.
+2026-07-06 21:12:05,094 | INFO     | Stratum.UI | Stratum initialized. 🔐 Licensed | Key: D9ZPD-ZO... | Expires: 2027-07-06
+2026-07-07 09:00:15,272 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 09:00:15,274 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 09:00:15,289 | INFO     | Stratum.UI | Fetching data for 5 symbols...
+2026-07-07 09:00:15,533 | INFO     | Stratum.DataLoader | Loaded AAPL from cache: 1507 bars
+2026-07-07 09:00:15,539 | INFO     | Stratum.DataLoader | Loaded TSLA from cache: 1507 bars
+2026-07-07 09:00:15,545 | INFO     | Stratum.DataLoader | Loaded NVDA from cache: 1507 bars
+2026-07-07 09:00:15,550 | INFO     | Stratum.DataLoader | Loaded GOOGL from cache: 1507 bars
+2026-07-07 09:00:15,554 | INFO     | Stratum.DataLoader | Loaded AMD from cache: 1507 bars
+2026-07-07 09:00:15,555 | INFO     | Stratum.UI | Data loaded: AAPL(1507 bars), TSLA(1507 bars), NVDA(1507 bars), GOOGL(1507 bars), AMD(1507 bars)
+2026-07-07 09:00:15,557 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 09:00:16,506 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 09:00:16,507 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 09:00:16,513 | INFO     | Stratum.UI | Backtest complete: 5 symbols analyzed.
+2026-07-07 10:09:20,325 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 10:09:20,326 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 10:09:20,336 | INFO     | Stratum.UI | Fetching data for 1 symbols...
+2026-07-07 10:09:22,636 | INFO     | Stratum.DataLoader | Yahoo: BLDP (1d) — 1507 rows
+2026-07-07 10:09:22,652 | INFO     | Stratum.DataLoader | Fetched & cached BLDP: 1507 bars
+2026-07-07 10:09:22,653 | INFO     | Stratum.UI | Data loaded: BLDP(1507 bars)
+2026-07-07 10:09:22,653 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 10:09:22,893 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 10:09:22,893 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 10:09:22,897 | INFO     | Stratum.UI | Backtest complete: 1 symbols analyzed.
+2026-07-07 10:13:33,481 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 10:13:33,481 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 10:13:33,493 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 10:13:33,498 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 10:13:33,504 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 10:13:33,509 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 985 bars
+2026-07-07 10:13:33,514 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 1068 bars
+2026-07-07 10:13:33,520 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 1507 bars
+2026-07-07 10:13:33,526 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 1507 bars
+2026-07-07 10:13:33,530 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-07 10:13:33,538 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 10:13:33,543 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 1507 bars
+2026-07-07 10:13:33,543 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(985 bars), GFAI(1068 bars), EXK(1507 bars), SVM(1507 bars), SERV(455 bars), BE(491 bars), BLDP(1507 bars)
+2026-07-07 10:13:33,570 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 10:13:34,633 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 10:13:34,635 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 10:13:34,637 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 10:14:15,171 | INFO     | Stratum.UI | Optimizing FCEL...
+2026-07-07 10:14:15,175 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 10:14:15,175 | INFO     | Stratum.Optimizer | Optimizing FCEL: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:14:15,611 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:14:16,094 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:14:16,550 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:14:16,987 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:14:17,424 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:14:17,865 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:14:18,316 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:14:18,748 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:14:19,198 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:14:19,638 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:14:20,087 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:14:20,540 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:14:21,034 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:14:21,476 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:14:21,920 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:14:22,407 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:14:22,867 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:14:23,326 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:14:23,765 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:14:24,239 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:14:24,704 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:14:25,159 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:14:25,598 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:14:26,045 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:14:26,478 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:14:26,910 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:14:27,363 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:14:27,801 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:14:28,258 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:14:28,697 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:14:29,161 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:14:29,632 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:14:30,137 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:14:30,776 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:14:31,421 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:14:32,110 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:14:33,228 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:14:34,035 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:14:34,957 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:14:35,913 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:14:36,705 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:14:37,412 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:14:37,942 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:14:38,438 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:14:38,921 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:14:39,415 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:14:39,920 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:14:40,419 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:14:40,913 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:14:41,423 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:14:41,909 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:14:42,400 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:14:42,892 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:14:43,413 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:14:43,904 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:14:44,413 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:14:44,892 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:14:45,370 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:14:45,851 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:14:46,333 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:14:46,829 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:14:47,349 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:14:47,617 | INFO     | Stratum.Optimizer | Optimization complete for FCEL: best score=0.3083254528
+2026-07-07 10:14:47,618 | INFO     | Stratum.UI |   FCEL best: score=0.31, return=9.79%
+2026-07-07 10:14:47,619 | INFO     | Stratum.UI | Optimizing CLSK...
+2026-07-07 10:14:47,622 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 10:14:47,622 | INFO     | Stratum.Optimizer | Optimizing CLSK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:14:48,133 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:14:48,615 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:14:49,102 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:14:49,602 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:14:50,115 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:14:50,596 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:14:51,095 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:14:51,577 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:14:52,088 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:14:52,614 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:14:53,213 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:14:53,993 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:14:54,767 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:14:55,467 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:14:56,102 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:14:56,868 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:14:57,608 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:14:58,294 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:14:59,052 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:14:59,699 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:15:00,382 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:15:01,138 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:15:01,870 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:15:02,771 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:15:03,481 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:15:04,104 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:15:04,662 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:15:05,155 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:15:05,642 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:15:06,129 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:15:06,605 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:15:07,146 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:15:07,836 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:15:08,464 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:15:09,136 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:15:09,799 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:15:10,447 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:15:11,056 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:15:11,663 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:15:12,224 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:15:12,873 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:15:13,459 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:15:14,038 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:15:14,666 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:15:15,298 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:15:15,947 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:15:16,533 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:15:17,156 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:15:17,728 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:15:18,366 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:15:18,982 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:15:19,598 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:15:20,127 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:15:20,616 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:15:21,130 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:15:21,668 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:15:22,228 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:15:22,717 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:15:23,237 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:15:23,718 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:15:24,220 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:15:24,710 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:15:24,950 | INFO     | Stratum.Optimizer | Optimization complete for CLSK: best score=0.23234682
+2026-07-07 10:15:24,950 | INFO     | Stratum.UI |   CLSK best: score=0.23, return=7.27%
+2026-07-07 10:15:24,951 | INFO     | Stratum.UI | Optimizing KSCP...
+2026-07-07 10:15:24,954 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 985 bars
+2026-07-07 10:15:24,954 | INFO     | Stratum.Optimizer | Optimizing KSCP: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:15:26,010 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:15:27,046 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:15:28,132 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:15:29,183 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:15:30,224 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:15:31,245 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:15:32,588 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:15:33,938 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:15:35,080 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:15:36,115 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:15:37,170 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:15:38,221 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:15:39,256 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:15:40,404 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:15:41,521 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:15:42,598 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:15:43,660 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:15:44,725 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:15:45,813 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:15:46,864 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:15:47,921 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:15:48,981 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:15:50,057 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:15:51,300 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:15:52,891 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:15:54,142 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:15:55,253 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:15:56,673 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:15:58,170 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:15:59,501 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:16:00,710 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:16:01,808 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:16:03,133 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:16:04,178 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:16:05,279 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:16:06,359 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:16:07,423 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:16:08,466 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:16:09,572 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:16:10,677 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:16:11,819 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:16:12,892 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:16:13,949 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:16:15,010 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:16:16,107 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:16:17,159 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:16:18,223 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:16:19,269 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:16:20,376 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:16:21,461 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:16:22,551 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:16:23,648 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:16:24,870 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:16:26,121 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:16:27,246 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:16:28,372 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:16:29,597 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:16:30,913 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:16:32,146 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:16:33,405 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:16:34,472 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:16:35,526 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:16:36,001 | INFO     | Stratum.Optimizer | Optimization complete for KSCP: best score=0.21139961699999998
+2026-07-07 10:16:36,002 | INFO     | Stratum.UI |   KSCP best: score=0.21, return=12.19%
+2026-07-07 10:16:36,002 | INFO     | Stratum.UI | Optimizing GFAI...
+2026-07-07 10:16:36,006 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 1068 bars
+2026-07-07 10:16:36,006 | INFO     | Stratum.Optimizer | Optimizing GFAI: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:16:37,045 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:16:38,077 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:16:39,107 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:16:40,138 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:16:41,199 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:16:42,266 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:16:43,305 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:16:44,322 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:16:45,357 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:16:46,368 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:16:47,395 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:16:48,416 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:16:49,434 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:16:50,451 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:16:51,464 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:16:52,493 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:16:53,512 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:16:54,569 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:16:55,670 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:16:56,730 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:16:57,822 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:16:58,901 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:16:59,915 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:17:00,941 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:17:02,046 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:17:03,332 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:17:04,401 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:17:05,431 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:17:06,513 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:17:07,531 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:17:08,542 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:17:09,553 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:17:10,603 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:17:11,689 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:17:12,719 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:17:13,776 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:17:14,805 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:17:15,837 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:17:16,845 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:17:17,845 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:17:18,865 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:17:19,911 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:17:20,943 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:17:22,069 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:17:23,210 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:17:24,303 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:17:25,363 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:17:26,430 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:17:27,507 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:17:28,595 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:17:29,606 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:17:30,625 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:17:31,700 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:17:32,847 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:17:34,001 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:17:35,106 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:17:36,110 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:17:37,117 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:17:38,129 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:17:39,143 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:17:40,215 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:17:41,283 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:17:41,812 | INFO     | Stratum.Optimizer | Optimization complete for GFAI: best score=0.19633893719999998
+2026-07-07 10:17:41,813 | INFO     | Stratum.UI |   GFAI best: score=0.20, return=10.54%
+2026-07-07 10:17:41,814 | INFO     | Stratum.UI | Optimizing EXK...
+2026-07-07 10:17:41,820 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 1507 bars
+2026-07-07 10:17:41,820 | INFO     | Stratum.Optimizer | Optimizing EXK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:17:43,308 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:17:44,727 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:17:46,143 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:17:47,568 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:17:48,985 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:17:50,393 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:17:51,813 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:17:53,322 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:17:55,306 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:17:56,746 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:17:58,271 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:17:59,783 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:18:01,293 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:18:03,011 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:18:04,486 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:18:05,942 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:18:07,422 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:18:08,864 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:18:10,352 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:18:11,839 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:18:13,327 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:18:14,751 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:18:16,194 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:18:17,621 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:18:19,055 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:18:20,487 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:18:21,895 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:18:23,355 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:18:24,812 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:18:26,216 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:18:27,632 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:18:29,053 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:18:30,504 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:18:31,953 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:18:33,635 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:18:35,185 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:18:36,635 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:18:38,113 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:18:39,572 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:18:40,971 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:18:42,450 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:18:43,885 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:18:45,358 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:18:46,868 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:18:48,326 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:18:49,774 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:18:51,273 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:18:52,751 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:18:54,288 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:18:55,793 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:18:57,237 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:18:58,672 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:19:00,085 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:19:01,492 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:19:03,030 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:19:04,477 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:19:05,885 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:19:07,287 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:19:08,663 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:19:10,045 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:19:11,476 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:19:12,879 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:19:13,593 | INFO     | Stratum.Optimizer | Optimization complete for EXK: best score=0.25866908
+2026-07-07 10:19:13,593 | INFO     | Stratum.UI |   EXK best: score=0.26, return=19.12%
+2026-07-07 10:19:13,594 | INFO     | Stratum.UI | Optimizing SVM...
+2026-07-07 10:19:13,597 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 1507 bars
+2026-07-07 10:19:13,597 | INFO     | Stratum.Optimizer | Optimizing SVM: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:19:15,011 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:19:16,415 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:19:17,820 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:19:19,253 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:19:20,692 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:19:22,125 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:19:23,546 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:19:24,994 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:19:26,444 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:19:27,856 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:19:29,291 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:19:30,694 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:19:32,163 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:19:33,940 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:19:35,479 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:19:36,939 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:19:38,383 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:19:39,862 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:19:41,347 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:19:42,760 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:19:44,178 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:19:45,588 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:19:46,992 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:19:48,411 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:19:49,829 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:19:51,232 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:19:52,656 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:19:54,092 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:19:55,530 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:19:56,980 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:19:58,454 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:19:59,853 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:20:01,298 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:20:03,037 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:20:04,486 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:20:05,889 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:20:07,317 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:20:08,743 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:20:10,136 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:20:11,593 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:20:12,991 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:20:14,381 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:20:15,770 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:20:17,189 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:20:18,660 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:20:20,119 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:20:21,519 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:20:23,073 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:20:24,561 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:20:25,953 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:20:27,362 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:20:28,778 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:20:30,193 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:20:31,620 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:20:33,326 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:20:34,808 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:20:36,204 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:20:37,595 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:20:38,979 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:20:40,382 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:20:41,853 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:20:43,260 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:20:43,949 | INFO     | Stratum.Optimizer | Optimization complete for SVM: best score=0.1592337204
+2026-07-07 10:20:43,950 | INFO     | Stratum.UI |   SVM best: score=0.16, return=3.14%
+2026-07-07 10:20:43,950 | INFO     | Stratum.UI | Optimizing SERV...
+2026-07-07 10:20:43,954 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-07 10:20:43,954 | INFO     | Stratum.Optimizer | Optimizing SERV: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:20:44,400 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:20:44,851 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:20:45,290 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:20:45,742 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:20:46,212 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:20:46,652 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:20:47,089 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:20:47,534 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:20:48,009 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:20:48,466 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:20:48,915 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:20:49,368 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:20:49,820 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:20:50,294 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:20:50,756 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:20:51,215 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:20:51,664 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:20:52,122 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:20:52,571 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:20:53,011 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:20:53,455 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:20:53,891 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:20:54,332 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:20:54,776 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:20:55,230 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:20:55,668 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:20:56,121 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:20:56,585 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:20:57,034 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:20:57,494 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:20:57,950 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:20:58,418 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:20:58,873 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:20:59,332 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:20:59,781 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:21:00,243 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:21:00,698 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:21:01,152 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:21:01,642 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:21:02,239 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:21:02,735 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:21:03,202 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:21:03,653 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:21:04,099 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:21:04,540 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:21:04,992 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:21:05,435 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:21:05,870 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:21:06,305 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:21:06,742 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:21:07,182 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:21:07,617 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:21:08,061 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:21:08,516 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:21:08,964 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:21:09,417 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:21:09,867 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:21:10,365 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:21:10,839 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:21:11,319 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:21:11,768 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:21:12,214 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:21:12,436 | INFO     | Stratum.Optimizer | Optimization complete for SERV: best score=0.12260066
+2026-07-07 10:21:12,437 | INFO     | Stratum.UI |   SERV best: score=0.12, return=0.75%
+2026-07-07 10:21:12,437 | INFO     | Stratum.UI | Optimizing BE...
+2026-07-07 10:21:12,441 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 10:21:12,441 | INFO     | Stratum.Optimizer | Optimizing BE: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:21:12,986 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:21:13,529 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:21:14,104 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:21:14,641 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:21:15,130 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:21:15,616 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:21:16,096 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:21:16,573 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:21:17,052 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:21:17,537 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:21:18,024 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:21:18,559 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:21:19,067 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:21:19,600 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:21:20,132 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:21:20,647 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:21:21,158 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:21:21,648 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:21:22,141 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:21:22,650 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:21:23,164 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:21:23,650 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:21:24,138 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:21:24,619 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:21:25,096 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:21:25,570 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:21:26,071 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:21:26,547 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:21:27,023 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:21:27,508 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:21:27,981 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:21:28,471 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:21:28,955 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:21:29,432 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:21:29,905 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:21:30,391 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:21:30,866 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:21:31,340 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:21:31,838 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:21:32,475 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:21:33,017 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:21:33,542 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:21:34,066 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:21:34,632 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:21:35,152 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:21:35,659 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:21:36,160 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:21:36,672 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:21:37,201 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:21:37,707 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:21:38,244 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:21:38,739 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:21:39,233 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:21:39,741 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:21:40,237 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:21:40,775 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:21:41,319 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:21:41,835 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:21:42,339 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:21:42,839 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:21:43,339 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:21:43,821 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:21:44,065 | INFO     | Stratum.Optimizer | Optimization complete for BE: best score=0.2252899152
+2026-07-07 10:21:44,065 | INFO     | Stratum.UI |   BE best: score=0.23, return=6.89%
+2026-07-07 10:21:44,066 | INFO     | Stratum.UI | Optimizing BLDP...
+2026-07-07 10:21:44,070 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 1507 bars
+2026-07-07 10:21:44,070 | INFO     | Stratum.Optimizer | Optimizing BLDP: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 10:21:45,532 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 10:21:46,990 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 10:21:48,422 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 10:21:49,863 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 10:21:51,292 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 10:21:52,724 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 10:21:54,207 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 10:21:56,199 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 10:21:58,069 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 10:21:59,721 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 10:22:01,371 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 10:22:03,383 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 10:22:05,031 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 10:22:06,588 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 10:22:08,145 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 10:22:09,730 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 10:22:11,405 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 10:22:12,976 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 10:22:14,541 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 10:22:16,099 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 10:22:17,667 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 10:22:19,227 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 10:22:20,831 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 10:22:22,390 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 10:22:23,944 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 10:22:25,505 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 10:22:27,084 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 10:22:28,634 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 10:22:30,253 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 10:22:31,922 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 10:22:34,269 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 10:22:36,245 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 10:22:37,830 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 10:22:39,560 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 10:22:41,348 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 10:22:43,063 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 10:22:44,767 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 10:22:46,646 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 10:22:48,259 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 10:22:49,905 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 10:22:51,618 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 10:22:53,396 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 10:22:54,957 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 10:22:56,539 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 10:22:58,098 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 10:22:59,639 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 10:23:01,269 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 10:23:03,416 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 10:23:05,356 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 10:23:07,249 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 10:23:08,893 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 10:23:10,493 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 10:23:12,085 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 10:23:13,699 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 10:23:15,274 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 10:23:16,917 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 10:23:18,476 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 10:23:20,085 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 10:23:21,669 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 10:23:23,331 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 10:23:24,960 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 10:23:26,603 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 10:23:27,365 | INFO     | Stratum.Optimizer | Optimization complete for BLDP: best score=0.21875873039999996
+2026-07-07 10:23:27,369 | INFO     | Stratum.UI |   BLDP best: score=0.22, return=9.41%
+2026-07-07 10:23:27,381 | INFO     | Stratum.UI | Optimization complete for 9 symbols.
+2026-07-07 15:08:21,226 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:08:21,227 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:08:21,242 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:08:21,256 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:08:21,260 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:08:21,268 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:08:21,272 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:08:21,277 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:08:21,281 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:08:21,284 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-07 15:08:21,287 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:08:21,291 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:08:21,292 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), SERV(455 bars), BE(491 bars), BLDP(501 bars)
+2026-07-07 15:08:21,330 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:08:21,939 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:08:21,940 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:08:21,949 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 15:08:34,977 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:08:34,977 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:08:34,987 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:08:34,989 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:08:34,991 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:08:34,996 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:08:35,000 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:08:35,004 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:08:35,008 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:08:35,010 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-07 15:08:35,013 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:08:35,017 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:08:35,109 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), SERV(455 bars), BE(491 bars), BLDP(501 bars)
+2026-07-07 15:08:35,157 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:08:35,668 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:08:35,669 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:08:35,674 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 15:09:35,283 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:09:35,284 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:09:35,293 | INFO     | Stratum.UI | Fetching data for 10 symbols...
+2026-07-07 15:09:35,296 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:09:35,299 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:09:35,302 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:09:35,308 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:09:35,312 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:09:35,315 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:09:35,317 | INFO     | Stratum.DataLoader | Loaded SERV from cache: 455 bars
+2026-07-07 15:09:35,320 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:09:35,324 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:09:35,651 | INFO     | Stratum.DataLoader | Yahoo: CORZ (1d) — 486 rows
+2026-07-07 15:09:35,660 | INFO     | Stratum.DataLoader | Fetched & cached CORZ: 486 bars
+2026-07-07 15:09:35,661 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), SERV(455 bars), BE(491 bars), BLDP(501 bars), CORZ(486 bars)
+2026-07-07 15:09:35,712 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:09:36,392 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:09:36,392 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:09:36,396 | INFO     | Stratum.UI | Backtest complete: 10 symbols analyzed.
+2026-07-07 15:10:26,939 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:10:26,939 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:10:26,951 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:10:26,952 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:10:26,955 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:10:26,959 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:10:26,962 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:10:26,965 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:10:26,970 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:10:26,973 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:10:26,976 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:10:26,979 | INFO     | Stratum.DataLoader | Loaded CORZ from cache: 486 bars
+2026-07-07 15:10:26,980 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), BE(491 bars), BLDP(501 bars), CORZ(486 bars)
+2026-07-07 15:10:27,024 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:10:27,625 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:10:27,626 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:10:27,630 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 15:11:57,256 | INFO     | Stratum.UI | Optimizing FCEL...
+2026-07-07 15:11:57,260 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:11:57,260 | INFO     | Stratum.Optimizer | Optimizing FCEL: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:11:57,730 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:11:58,192 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:11:58,642 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:11:59,089 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:11:59,556 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:12:00,027 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:12:00,495 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:12:00,958 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:12:01,449 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:12:01,958 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:12:02,483 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:12:03,060 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:12:03,523 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:12:03,985 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:12:04,427 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:12:04,873 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:12:05,317 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:12:05,762 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:12:06,206 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:12:06,649 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:12:07,157 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:12:07,598 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:12:08,041 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:12:08,495 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:12:08,937 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:12:09,397 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:12:09,857 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:12:10,321 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:12:10,791 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:12:11,255 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:12:11,709 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:12:12,158 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:12:12,608 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:12:13,052 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:12:13,490 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:12:13,933 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:12:14,385 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:12:14,830 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:12:15,274 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:12:15,716 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:12:16,158 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:12:16,627 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:12:17,083 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:12:17,526 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:12:17,976 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:12:18,420 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:12:18,860 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:12:19,305 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:12:19,753 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:12:20,199 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:12:20,692 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:12:21,304 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:12:21,997 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:12:22,894 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:12:23,614 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:12:24,320 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:12:24,952 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:12:25,489 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:12:25,997 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:12:26,528 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:12:27,096 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:12:27,613 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:12:27,871 | INFO     | Stratum.Optimizer | Optimization complete for FCEL: best score=0.3083254528
+2026-07-07 15:12:27,871 | INFO     | Stratum.UI |   FCEL best: score=0.31, return=9.79%
+2026-07-07 15:12:27,872 | INFO     | Stratum.UI | Optimizing CLSK...
+2026-07-07 15:12:27,876 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:12:27,876 | INFO     | Stratum.Optimizer | Optimizing CLSK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:12:28,430 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:12:28,933 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:12:29,458 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:12:29,993 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:12:30,600 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:12:31,175 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:12:31,699 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:12:32,325 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:12:33,154 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:12:33,676 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:12:34,185 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:12:34,705 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:12:35,216 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:12:35,745 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:12:36,259 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:12:36,782 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:12:37,321 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:12:37,837 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:12:38,344 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:12:38,842 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:12:39,442 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:12:39,972 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:12:40,466 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:12:40,984 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:12:41,506 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:12:42,018 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:12:42,514 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:12:43,024 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:12:43,537 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:12:44,115 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:12:44,638 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:12:45,130 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:12:45,667 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:12:46,179 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:12:46,688 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:12:47,238 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:12:47,758 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:12:48,306 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:12:48,828 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:12:49,331 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:12:49,833 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:12:50,337 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:12:50,846 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:12:51,356 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:12:52,049 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:12:52,828 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:12:53,530 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:12:54,213 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:12:54,842 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:12:55,341 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:12:55,850 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:12:56,356 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:12:56,855 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:12:57,351 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:12:57,844 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:12:58,352 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:12:58,847 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:12:59,351 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:12:59,883 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:13:00,411 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:13:00,997 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:13:01,527 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:13:01,780 | INFO     | Stratum.Optimizer | Optimization complete for CLSK: best score=0.23234682
+2026-07-07 15:13:01,781 | INFO     | Stratum.UI |   CLSK best: score=0.23, return=7.27%
+2026-07-07 15:13:01,782 | INFO     | Stratum.UI | Optimizing KSCP...
+2026-07-07 15:13:01,786 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:13:01,787 | INFO     | Stratum.Optimizer | Optimizing KSCP: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:13:02,518 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:13:03,270 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:13:03,864 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:13:04,471 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:13:05,108 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:13:05,658 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:13:06,203 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:13:06,784 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:13:07,373 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:13:07,953 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:13:08,522 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:13:09,074 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:13:09,631 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:13:10,238 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:13:10,792 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:13:11,364 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:13:11,954 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:13:12,509 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:13:13,130 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:13:13,719 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:13:14,354 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:13:14,979 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:13:15,643 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:13:16,253 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:13:16,808 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:13:17,364 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:13:17,954 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:13:18,549 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:13:19,167 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:13:19,740 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:13:20,320 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:13:20,894 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:13:21,496 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:13:22,423 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:13:23,184 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:13:23,945 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:13:24,700 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:13:25,355 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:13:25,919 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:13:26,535 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:13:27,112 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:13:27,665 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:13:28,216 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:13:28,814 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:13:29,366 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:13:29,944 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:13:30,517 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:13:31,155 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:13:31,823 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:13:32,483 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:13:33,126 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:13:33,651 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:13:34,157 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:13:34,661 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:13:35,147 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:13:35,665 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:13:36,160 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:13:36,651 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:13:37,155 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:13:37,636 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:13:38,119 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:13:38,605 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:13:38,845 | INFO     | Stratum.Optimizer | Optimization complete for KSCP: best score=0.222338016
+2026-07-07 15:13:38,846 | INFO     | Stratum.UI |   KSCP best: score=0.22, return=8.20%
+2026-07-07 15:13:38,846 | INFO     | Stratum.UI | Optimizing GFAI...
+2026-07-07 15:13:38,850 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:13:38,850 | INFO     | Stratum.Optimizer | Optimizing GFAI: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:13:39,335 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:13:39,819 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:13:40,302 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:13:40,794 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:13:41,292 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:13:41,784 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:13:42,268 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:13:42,755 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:13:43,237 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:13:43,748 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:13:44,231 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:13:44,712 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:13:45,193 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:13:45,678 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:13:46,172 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:13:46,676 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:13:47,185 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:13:47,707 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:13:48,217 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:13:48,737 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:13:49,241 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:13:49,748 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:13:50,257 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:13:50,766 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:13:51,269 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:13:51,931 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:13:52,614 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:13:53,188 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:13:53,746 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:13:54,317 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:13:54,908 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:13:55,477 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:13:55,963 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:13:56,452 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:13:56,952 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:13:57,440 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:13:57,921 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:13:58,402 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:13:58,885 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:13:59,376 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:13:59,862 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:14:00,356 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:14:00,853 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:14:01,354 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:14:01,836 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:14:02,361 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:14:02,972 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:14:03,515 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:14:04,043 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:14:04,554 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:14:05,036 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:14:05,510 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:14:06,007 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:14:06,492 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:14:06,966 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:14:07,444 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:14:07,927 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:14:08,414 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:14:08,897 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:14:09,376 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:14:09,858 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:14:10,339 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:14:10,577 | INFO     | Stratum.Optimizer | Optimization complete for GFAI: best score=0.073461033
+2026-07-07 15:14:10,578 | INFO     | Stratum.UI |   GFAI best: score=0.07, return=-3.45%
+2026-07-07 15:14:10,578 | INFO     | Stratum.UI | Optimizing EXK...
+2026-07-07 15:14:10,582 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:14:10,582 | INFO     | Stratum.Optimizer | Optimizing EXK: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:14:11,115 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:14:11,631 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:14:12,127 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:14:12,624 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:14:13,133 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:14:13,650 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:14:14,144 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:14:14,635 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:14:15,123 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:14:15,633 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:14:16,144 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:14:16,641 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:14:17,133 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:14:17,634 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:14:18,120 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:14:18,619 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:14:19,125 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:14:19,635 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:14:20,145 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:14:20,634 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:14:21,134 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:14:21,684 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:14:22,313 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:14:22,860 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:14:23,393 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:14:23,929 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:14:24,446 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:14:24,965 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:14:25,467 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:14:25,964 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:14:26,463 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:14:26,953 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:14:27,442 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:14:27,929 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:14:28,443 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:14:28,946 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:14:29,439 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:14:29,939 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:14:30,453 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:14:30,973 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:14:31,482 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:14:32,005 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:14:32,548 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:14:33,171 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:14:33,661 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:14:34,150 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:14:34,641 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:14:35,136 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:14:35,636 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:14:36,154 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:14:36,643 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:14:37,127 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:14:37,608 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:14:38,093 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:14:38,607 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:14:39,114 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:14:39,616 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:14:40,129 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:14:40,649 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:14:41,168 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:14:41,693 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:14:42,198 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:14:42,449 | INFO     | Stratum.Optimizer | Optimization complete for EXK: best score=0.2337614
+2026-07-07 15:14:42,450 | INFO     | Stratum.UI |   EXK best: score=0.23, return=7.23%
+2026-07-07 15:14:42,450 | INFO     | Stratum.UI | Optimizing SVM...
+2026-07-07 15:14:42,455 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:14:42,456 | INFO     | Stratum.Optimizer | Optimizing SVM: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:14:42,943 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:14:43,430 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:14:43,920 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:14:44,404 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:14:44,887 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:14:45,377 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:14:45,861 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:14:46,343 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:14:46,830 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:14:47,315 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:14:47,798 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:14:48,293 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:14:48,775 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:14:49,258 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:14:49,741 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:14:50,219 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:14:50,705 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:14:51,190 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:14:51,708 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:14:52,353 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:14:52,863 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:14:53,396 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:14:53,945 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:14:54,483 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:14:55,021 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:14:55,525 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:14:56,025 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:14:56,532 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:14:57,032 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:14:57,520 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:14:58,007 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:14:58,541 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:14:59,026 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:14:59,528 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:15:00,024 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:15:00,548 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:15:01,043 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:15:01,540 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:15:02,063 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:15:02,649 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:15:03,196 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:15:03,697 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:15:04,181 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:15:04,696 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:15:05,174 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:15:05,652 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:15:06,131 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:15:06,618 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:15:07,146 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:15:07,652 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:15:08,179 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:15:08,696 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:15:09,226 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:15:09,731 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:15:10,238 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:15:10,729 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:15:11,225 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:15:11,725 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:15:12,210 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:15:12,692 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:15:13,178 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:15:13,668 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:15:13,985 | INFO     | Stratum.Optimizer | Optimization complete for SVM: best score=0.145676112
+2026-07-07 15:15:13,986 | INFO     | Stratum.UI |   SVM best: score=0.15, return=3.90%
+2026-07-07 15:15:13,987 | INFO     | Stratum.UI | Optimizing BE...
+2026-07-07 15:15:13,992 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:15:13,992 | INFO     | Stratum.Optimizer | Optimizing BE: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:15:14,543 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:15:15,086 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:15:15,631 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:15:16,155 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:15:16,680 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:15:17,175 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:15:17,674 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:15:18,169 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:15:18,662 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:15:19,157 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:15:19,650 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:15:20,147 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:15:20,664 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:15:21,166 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:15:21,731 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:15:22,419 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:15:22,967 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:15:23,497 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:15:24,011 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:15:24,537 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:15:25,062 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:15:25,585 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:15:26,108 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:15:26,636 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:15:27,157 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:15:27,679 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:15:28,214 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:15:28,754 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:15:29,250 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:15:29,750 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:15:30,251 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:15:30,759 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:15:31,263 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:15:31,755 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:15:32,318 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:15:32,963 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:15:33,468 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:15:33,996 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:15:34,499 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:15:35,012 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:15:35,531 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:15:36,028 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:15:36,515 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:15:37,004 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:15:37,489 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:15:37,976 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:15:38,460 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:15:38,948 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:15:39,438 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:15:39,977 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:15:40,482 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:15:40,984 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:15:41,475 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:15:41,984 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:15:42,481 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:15:42,972 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:15:43,449 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:15:43,950 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:15:44,451 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:15:44,968 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:15:45,485 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:15:45,991 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:15:46,252 | INFO     | Stratum.Optimizer | Optimization complete for BE: best score=0.2252899152
+2026-07-07 15:15:46,253 | INFO     | Stratum.UI |   BE best: score=0.23, return=6.89%
+2026-07-07 15:15:46,253 | INFO     | Stratum.UI | Optimizing BLDP...
+2026-07-07 15:15:46,258 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:15:46,258 | INFO     | Stratum.Optimizer | Optimizing BLDP: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:15:46,810 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:15:47,338 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:15:47,861 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:15:48,348 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:15:48,836 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:15:49,327 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:15:49,812 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:15:50,307 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:15:50,798 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:15:51,276 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:15:51,845 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:15:52,487 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:15:53,033 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:15:53,581 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:15:54,132 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:15:54,684 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:15:55,194 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:15:55,696 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:15:56,202 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:15:56,711 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:15:57,225 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:15:57,729 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:15:58,222 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:15:58,711 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:15:59,195 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:15:59,717 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:16:00,218 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:16:00,715 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:16:01,228 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:16:01,731 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:16:02,271 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:16:02,916 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:16:03,409 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:16:03,918 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:16:04,426 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:16:04,940 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:16:05,443 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:16:05,931 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:16:06,419 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:16:06,898 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:16:07,380 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:16:07,863 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:16:08,343 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:16:08,827 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:16:09,328 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:16:09,810 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:16:10,307 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:16:10,787 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:16:11,278 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:16:11,789 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:16:12,291 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:16:12,770 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:16:13,270 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:16:13,773 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:16:14,273 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:16:14,782 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:16:15,264 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:16:15,759 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:16:16,238 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:16:16,711 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:16:17,233 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:16:17,714 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:16:17,963 | INFO     | Stratum.Optimizer | Optimization complete for BLDP: best score=0.275430255
+2026-07-07 15:16:17,964 | INFO     | Stratum.UI |   BLDP best: score=0.28, return=8.05%
+2026-07-07 15:16:17,964 | INFO     | Stratum.UI | Optimizing CORZ...
+2026-07-07 15:16:17,967 | INFO     | Stratum.DataLoader | Loaded CORZ from cache: 486 bars
+2026-07-07 15:16:17,967 | INFO     | Stratum.Optimizer | Optimizing CORZ: 625 combinations across ['rsi_buy_threshold', 'rsi_sell_threshold', 'stop_loss_pct', 'take_profit_pct']
+2026-07-07 15:16:18,444 | INFO     | Stratum.Optimizer |   Progress: 10/625
+2026-07-07 15:16:18,921 | INFO     | Stratum.Optimizer |   Progress: 20/625
+2026-07-07 15:16:19,395 | INFO     | Stratum.Optimizer |   Progress: 30/625
+2026-07-07 15:16:19,870 | INFO     | Stratum.Optimizer |   Progress: 40/625
+2026-07-07 15:16:20,340 | INFO     | Stratum.Optimizer |   Progress: 50/625
+2026-07-07 15:16:20,813 | INFO     | Stratum.Optimizer |   Progress: 60/625
+2026-07-07 15:16:21,286 | INFO     | Stratum.Optimizer |   Progress: 70/625
+2026-07-07 15:16:21,859 | INFO     | Stratum.Optimizer |   Progress: 80/625
+2026-07-07 15:16:22,496 | INFO     | Stratum.Optimizer |   Progress: 90/625
+2026-07-07 15:16:22,998 | INFO     | Stratum.Optimizer |   Progress: 100/625
+2026-07-07 15:16:23,512 | INFO     | Stratum.Optimizer |   Progress: 110/625
+2026-07-07 15:16:24,012 | INFO     | Stratum.Optimizer |   Progress: 120/625
+2026-07-07 15:16:24,506 | INFO     | Stratum.Optimizer |   Progress: 130/625
+2026-07-07 15:16:24,978 | INFO     | Stratum.Optimizer |   Progress: 140/625
+2026-07-07 15:16:25,451 | INFO     | Stratum.Optimizer |   Progress: 150/625
+2026-07-07 15:16:25,921 | INFO     | Stratum.Optimizer |   Progress: 160/625
+2026-07-07 15:16:26,396 | INFO     | Stratum.Optimizer |   Progress: 170/625
+2026-07-07 15:16:26,877 | INFO     | Stratum.Optimizer |   Progress: 180/625
+2026-07-07 15:16:27,357 | INFO     | Stratum.Optimizer |   Progress: 190/625
+2026-07-07 15:16:27,833 | INFO     | Stratum.Optimizer |   Progress: 200/625
+2026-07-07 15:16:28,313 | INFO     | Stratum.Optimizer |   Progress: 210/625
+2026-07-07 15:16:28,795 | INFO     | Stratum.Optimizer |   Progress: 220/625
+2026-07-07 15:16:29,270 | INFO     | Stratum.Optimizer |   Progress: 230/625
+2026-07-07 15:16:29,749 | INFO     | Stratum.Optimizer |   Progress: 240/625
+2026-07-07 15:16:30,242 | INFO     | Stratum.Optimizer |   Progress: 250/625
+2026-07-07 15:16:30,751 | INFO     | Stratum.Optimizer |   Progress: 260/625
+2026-07-07 15:16:31,252 | INFO     | Stratum.Optimizer |   Progress: 270/625
+2026-07-07 15:16:31,750 | INFO     | Stratum.Optimizer |   Progress: 280/625
+2026-07-07 15:16:32,319 | INFO     | Stratum.Optimizer |   Progress: 290/625
+2026-07-07 15:16:32,909 | INFO     | Stratum.Optimizer |   Progress: 300/625
+2026-07-07 15:16:33,387 | INFO     | Stratum.Optimizer |   Progress: 310/625
+2026-07-07 15:16:33,862 | INFO     | Stratum.Optimizer |   Progress: 320/625
+2026-07-07 15:16:34,334 | INFO     | Stratum.Optimizer |   Progress: 330/625
+2026-07-07 15:16:34,822 | INFO     | Stratum.Optimizer |   Progress: 340/625
+2026-07-07 15:16:35,326 | INFO     | Stratum.Optimizer |   Progress: 350/625
+2026-07-07 15:16:35,857 | INFO     | Stratum.Optimizer |   Progress: 360/625
+2026-07-07 15:16:36,336 | INFO     | Stratum.Optimizer |   Progress: 370/625
+2026-07-07 15:16:36,800 | INFO     | Stratum.Optimizer |   Progress: 380/625
+2026-07-07 15:16:37,267 | INFO     | Stratum.Optimizer |   Progress: 390/625
+2026-07-07 15:16:37,737 | INFO     | Stratum.Optimizer |   Progress: 400/625
+2026-07-07 15:16:38,210 | INFO     | Stratum.Optimizer |   Progress: 410/625
+2026-07-07 15:16:38,689 | INFO     | Stratum.Optimizer |   Progress: 420/625
+2026-07-07 15:16:39,158 | INFO     | Stratum.Optimizer |   Progress: 430/625
+2026-07-07 15:16:39,626 | INFO     | Stratum.Optimizer |   Progress: 440/625
+2026-07-07 15:16:40,094 | INFO     | Stratum.Optimizer |   Progress: 450/625
+2026-07-07 15:16:40,581 | INFO     | Stratum.Optimizer |   Progress: 460/625
+2026-07-07 15:16:41,058 | INFO     | Stratum.Optimizer |   Progress: 470/625
+2026-07-07 15:16:41,557 | INFO     | Stratum.Optimizer |   Progress: 480/625
+2026-07-07 15:16:42,056 | INFO     | Stratum.Optimizer |   Progress: 490/625
+2026-07-07 15:16:42,543 | INFO     | Stratum.Optimizer |   Progress: 500/625
+2026-07-07 15:16:43,036 | INFO     | Stratum.Optimizer |   Progress: 510/625
+2026-07-07 15:16:43,509 | INFO     | Stratum.Optimizer |   Progress: 520/625
+2026-07-07 15:16:43,992 | INFO     | Stratum.Optimizer |   Progress: 530/625
+2026-07-07 15:16:44,461 | INFO     | Stratum.Optimizer |   Progress: 540/625
+2026-07-07 15:16:44,930 | INFO     | Stratum.Optimizer |   Progress: 550/625
+2026-07-07 15:16:45,403 | INFO     | Stratum.Optimizer |   Progress: 560/625
+2026-07-07 15:16:45,870 | INFO     | Stratum.Optimizer |   Progress: 570/625
+2026-07-07 15:16:46,338 | INFO     | Stratum.Optimizer |   Progress: 580/625
+2026-07-07 15:16:46,805 | INFO     | Stratum.Optimizer |   Progress: 590/625
+2026-07-07 15:16:47,272 | INFO     | Stratum.Optimizer |   Progress: 600/625
+2026-07-07 15:16:47,743 | INFO     | Stratum.Optimizer |   Progress: 610/625
+2026-07-07 15:16:48,214 | INFO     | Stratum.Optimizer |   Progress: 620/625
+2026-07-07 15:16:48,454 | INFO     | Stratum.Optimizer | Optimization complete for CORZ: best score=0.1666595142
+2026-07-07 15:16:48,457 | INFO     | Stratum.UI |   CORZ best: score=0.17, return=5.37%
+2026-07-07 15:16:48,526 | INFO     | Stratum.UI | Optimization complete for 9 symbols.
+2026-07-07 15:49:14,842 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:49:14,842 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:49:14,851 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:49:14,853 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:49:14,857 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:49:14,861 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:49:14,864 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:49:14,868 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:49:14,872 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:49:14,874 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:49:14,877 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:49:14,880 | INFO     | Stratum.DataLoader | Loaded CORZ from cache: 486 bars
+2026-07-07 15:49:14,881 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), BE(491 bars), BLDP(501 bars), CORZ(486 bars)
+2026-07-07 15:49:14,928 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:49:15,514 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:49:15,515 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:49:15,518 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 15:49:51,126 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:49:51,126 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:49:51,134 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:49:51,137 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:49:51,140 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:49:51,143 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:49:51,146 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:49:51,158 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:49:51,162 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:49:51,165 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:49:51,168 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:49:51,171 | INFO     | Stratum.DataLoader | Loaded CORZ from cache: 486 bars
+2026-07-07 15:49:51,171 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), BE(491 bars), BLDP(501 bars), CORZ(486 bars)
+2026-07-07 15:49:51,215 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:49:51,810 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:49:51,811 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:49:51,815 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.
+2026-07-07 15:50:43,849 | INFO     | Stratum.Config | Saved profile 'default' to C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-07 15:50:43,849 | INFO     | Stratum.UI | Configuration saved.
+2026-07-07 15:50:43,856 | INFO     | Stratum.UI | Fetching data for 9 symbols...
+2026-07-07 15:50:43,858 | INFO     | Stratum.DataLoader | Loaded FCEL from cache: 458 bars
+2026-07-07 15:50:43,863 | INFO     | Stratum.DataLoader | Loaded CLSK from cache: 458 bars
+2026-07-07 15:50:43,867 | INFO     | Stratum.DataLoader | Loaded KSCP from cache: 501 bars
+2026-07-07 15:50:43,871 | INFO     | Stratum.DataLoader | Loaded GFAI from cache: 501 bars
+2026-07-07 15:50:43,874 | INFO     | Stratum.DataLoader | Loaded EXK from cache: 501 bars
+2026-07-07 15:50:43,880 | INFO     | Stratum.DataLoader | Loaded SVM from cache: 501 bars
+2026-07-07 15:50:43,882 | INFO     | Stratum.DataLoader | Loaded BE from cache: 491 bars
+2026-07-07 15:50:43,886 | INFO     | Stratum.DataLoader | Loaded BLDP from cache: 501 bars
+2026-07-07 15:50:43,889 | INFO     | Stratum.DataLoader | Loaded CORZ from cache: 486 bars
+2026-07-07 15:50:43,890 | INFO     | Stratum.UI | Data loaded: FCEL(458 bars), CLSK(458 bars), KSCP(501 bars), GFAI(501 bars), EXK(501 bars), SVM(501 bars), BE(491 bars), BLDP(501 bars), CORZ(486 bars)
+2026-07-07 15:50:43,936 | INFO     | Stratum.UI | Running backtest...
+2026-07-07 15:50:44,560 | INFO     | Stratum.UI | Running AI analysis...
+2026-07-07 15:50:44,561 | INFO     | Stratum.UI | Analysis complete.
+2026-07-07 15:50:44,564 | INFO     | Stratum.UI | Backtest complete: 9 symbols analyzed.

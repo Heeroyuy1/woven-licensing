@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woven Model — Licensing System</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0f1e;
+            color: #e5e7eb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .login-box {
+            width: 100%;
+            max-width: 380px;
+            background: #111b36;
+            border: 1px solid rgba(34, 211, 238, 0.12);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+        }
+        .login-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .login-logo svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 0.75rem;
+        }
+        .login-logo h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+        }
+        .login-logo p {
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            padding: 0.6rem 0.9rem;
+            font-size: 0.8rem;
+            color: #fca5a5;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        .field { margin-bottom: 1.2rem; }
+        .field label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #9ca3af;
+            margin-bottom: 0.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .field input {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            background: #0d1b2d;
+            border: 1px solid #1c2d56;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .field input:focus {
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+        }
+        .field input::placeholder { color: #4b5563; }
+        .btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #06b6d4, #0891b2);
+            color: #0a0f1e;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            font-family: inherit;
+        }
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.25);
+        }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+        .footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="/logo.png" alt="Woven Model" style="width:48px;height:48px;border-radius:12px;display:block;margin:0 auto 0.75rem;">
+            <h1>Woven Model</h1>
+            <p>Licensing System</p>
+        </div>
+        <div id="error" class="error"></div>
+        <form id="form">
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="admin@wovenmodel.com" value="admin@wovenmodel.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" id="btn" class="btn">Sign In</button>
+        </form>
+        <p class="footer">Woven Model Licensing Server v1.3.0</p>
+    </div>
+    <script type="module">
+        import { LicensingApi } from '/js/api.js';
+        const api = new LicensingApi('http://localhost:8000');
+        document.getElementById('form').addEventListener('submit', async e => {
+            e.preventDefault();
+            const err = document.getElementById('error');
+            const btn = document.getElementById('btn');
+            err.style.display = 'none';
+            btn.disabled = true;
+            btn.textContent = 'Signing in\u2026';
+            try {
+                await api.login(
+                    document.getElementById('email').value.trim(),
+                    document.getElementById('password').value
+                );
+                window.location.href = '/';
+            } catch (ex) {
+                err.textContent = ex.message || 'Login failed';
+                err.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Sign In';
+            }
+        });
+        if (api.token) window.location.href = '/';
+    </script>
+</body>
+</html>

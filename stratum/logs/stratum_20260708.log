@@ -1,0 +1,4 @@
+2026-07-08 07:57:00,150 | INFO     | Stratum | Starting Stratum v1.0.0
+2026-07-08 07:57:01,312 | INFO     | Stratum.Config | Loaded profile 'default' from C:\Woven Model\Development\AI & Automation\End Product\Backtesting Bot\stratum\profiles\default.json
+2026-07-08 07:57:01,313 | INFO     | Stratum.UI | Configuration loaded.
+2026-07-08 07:57:01,316 | INFO     | Stratum.UI | Stratum initialized. 🔐 Licensed | Key: D9ZPD-ZO... | Expires: 2027-07-06

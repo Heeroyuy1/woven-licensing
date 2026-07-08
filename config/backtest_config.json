@@ -1,0 +1,58 @@
+{
+  "symbols": [
+    "AAPL",
+    "TSLA",
+    "NVDA",
+    "GOOGL"
+  ],
+  "start_date": "2025-12-31",
+  "end_date": "2026-5-31",
+  "interval": "1d",
+  "initial_capital": 100000,
+  "sma_period": 20,
+  "rsi_period": 14,
+  "rsi_buy_threshold": 30,
+  "rsi_sell_threshold": 70,
+  "stop_loss_pct": 0.02,
+  "take_profit_pct": 0.05,
+  "max_loss_pct": 0.05,
+  "max_holding_days": 5,
+  "max_exposure_pct": 0.1,
+  "risk_pct": 0.01,
+  "commission_per_share": 0.0,
+  "slippage_pct": 0.0005,
+  "per_symbol_settings": {},
+  "optimization": {
+    "enabled": false,
+    "param_grid": {
+      "rsi_buy_threshold": [
+        25,
+        28,
+        30,
+        33,
+        35
+      ],
+      "rsi_sell_threshold": [
+        65,
+        70,
+        72,
+        75,
+        78
+      ],
+      "stop_loss_pct": [
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03
+      ],
+      "take_profit_pct": [
+        0.03,
+        0.04,
+        0.05,
+        0.06,
+        0.08
+      ]
+    }
+  }
+}

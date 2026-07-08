@@ -1,0 +1,44 @@
+{
+  "APCA_API_KEY_ID": "PK541LVAVZK4MT45PSLM",
+  "APCA_API_SECRET_KEY": "nYhC63kdt48FMGca5C7eVrqoc1Ou4D8bJjQ64PlE",
+  "paper": true,
+  "symbols": ["AAPL", "TSLA", "NVDA", "GOOGL"],
+  "interval_seconds": 300,
+  "sma_period": 20,
+  "risk_pct": 0.01,
+  "max_holding_period": 5,
+  "max_exposure_pct": 0.1,
+  "enable_trailing": false,
+  "metrics_interval_seconds": 1800,
+  "per_symbol_settings": {
+    "AAPL": {
+      "rsi_buy_threshold": 28,
+      "rsi_sell_threshold": 72,
+      "stop_loss_pct": 0.015,
+      "take_profit_pct": 0.04,
+      "rsi_period": 14
+    },
+    "TSLA": {
+      "rsi_buy_threshold": 25,
+      "rsi_sell_threshold": 75,
+      "stop_loss_pct": 0.02,
+      "take_profit_pct": 0.06,
+      "rsi_period": 14
+    },
+    "NVDA": {
+      "rsi_buy_threshold": 30,
+      "rsi_sell_threshold": 70,
+      "stop_loss_pct": 0.02,
+      "take_profit_pct": 0.05,
+      "rsi_period": 14
+    },
+    "GOOGL": {
+      "rsi_buy_threshold": 27,
+      "rsi_sell_threshold": 70,
+      "stop_loss_pct": 0.018,
+      "take_profit_pct": 0.045,
+      "rsi_period": 14
+    }
+  }
+}
+

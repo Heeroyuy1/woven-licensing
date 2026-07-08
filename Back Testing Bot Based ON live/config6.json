@@ -1,0 +1,56 @@
+{
+  "APCA_API_KEY_ID": "AKZFVQN2XVUFD2BUNSUH2MJCRD",
+  "APCA_API_SECRET_KEY": "EyM3LmPaiMKpcVwBUXstwHhXskc9aKjwCvstA5RBvqsY",
+  "paper": false,
+  "symbols": ["BBAI", "MARA", "KULR", "GFAI", "PLUG"],
+  "interval_seconds": 1800,
+  "sma_period": 20,
+  "risk_pct": 0.01,
+  "max_holding_period": 5,
+  "max_exposure_pct": 0.1,
+  "enable_trailing": false,
+  "metrics_interval_seconds": 1800,
+  "per_symbol_settings": {
+    "BBAI": {
+      "rsi_buy_threshold": 27,
+      "rsi_sell_threshold": 72,
+      "stop_loss_pct": 0.018,
+      "take_profit_pct": 0.50,
+      "max_loss_pct": 0.05,
+      "rsi_period": 14
+    },
+    "MARA": {
+      "rsi_buy_threshold": 25,
+      "rsi_sell_threshold": 70,
+      "stop_loss_pct": 0.018,
+      "take_profit_pct": 0.50,
+      "max_loss_pct": 0.05,
+      "rsi_period": 14
+    },
+    "KULR": {
+      "rsi_buy_threshold": 28,
+      "rsi_sell_threshold": 70,
+      "stop_loss_pct": 0.018,
+      "take_profit_pct": 0.50,
+      "max_loss_pct": 0.05,
+      "rsi_period": 14
+    },
+    "GFAI": {
+      "rsi_buy_threshold": 27,
+      "rsi_sell_threshold": 70,
+      "stop_loss_pct": 0.03,
+      "take_profit_pct": 0.50,
+      "max_loss_pct": 0.05,
+      "rsi_period": 14
+    },
+    "PLUG": {
+      "rsi_buy_threshold": 28,
+      "rsi_sell_threshold": 72,
+      "stop_loss_pct": 0.018,
+      "take_profit_pct": 0.50,
+      "max_loss_pct": 0.05,
+      "rsi_period": 14
+    }
+  }
+}
+

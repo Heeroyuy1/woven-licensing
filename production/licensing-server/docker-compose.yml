@@ -1,0 +1,83 @@
+# =============================================================================
+# Woven Model Licensing Server — Production Docker Compose
+# =============================================================================
+# Start with:
+#   docker compose --env-file .env.production up -d
+#
+# Services:
+#   app  — FastAPI (uvicorn) — the main licensing API
+#   nginx — Reverse proxy, SSL termination, rate limiting, static files
+#
+# Volumes:
+#   licensing_db  — persists SQLite database at /app/data/
+# =============================================================================
+
+services:
+  # --------------------------------------------------------------------------
+  # Licensing API Server
+  # --------------------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: woven-model/licensing-server:latest
+    container_name: licensing-app
+    # Expose internal port only — all external traffic goes through nginx.
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      # SQLite database persistence across restarts
+      - licensing_db:/app/data
+    env_file:
+      - .env.production
+    environment:
+      # Override DATABASE_URL to ensure it always points at the volume mount
+      DATABASE_URL: "sqlite+aiosqlite:///data/woven_licensing.db"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: always
+    networks:
+      - licensing_net
+
+  # --------------------------------------------------------------------------
+  # Nginx Reverse Proxy
+  # --------------------------------------------------------------------------
+  nginx:
+    image: nginx:alpine
+    container_name: licensing-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Custom nginx config
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # Optional: SSL certificates (mount from host or certbot container)
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      # Optional: Certbot challenge directory for automatic renewal
+      - /var/www/certbot:/var/www/certbot:ro
+    depends_on:
+      app:
+        condition: service_healthy
+    restart: always
+    networks:
+      - licensing_net
+
+# --------------------------------------------------------------------------
+# Named Volumes
+# --------------------------------------------------------------------------
+volumes:
+  licensing_db:
+    driver: local
+
+# --------------------------------------------------------------------------
+# Network
+# --------------------------------------------------------------------------
+networks:
+  licensing_net:
+    driver: bridge

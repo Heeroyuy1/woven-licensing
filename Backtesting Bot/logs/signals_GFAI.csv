@@ -1,0 +1,21 @@
+timestamp,symbol,signal,price,confidence,metadata
+2026-05-11T04:00:00+00:00,GFAI,hold,0.48399999737739563,0.0,{'reason': 'insufficient_data'}
+2026-05-12T04:00:00+00:00,GFAI,hold,0.46000000834465027,0.0,{'reason': 'insufficient_data'}
+2026-05-13T04:00:00+00:00,GFAI,hold,0.45500001311302185,0.0,{'reason': 'insufficient_data'}
+2026-05-14T04:00:00+00:00,GFAI,hold,0.4970000088214874,0.0,{'reason': 'insufficient_data'}
+2026-05-15T04:00:00+00:00,GFAI,hold,0.45899999141693115,0.0,{'reason': 'insufficient_data'}
+2026-05-18T04:00:00+00:00,GFAI,hold,0.4740000069141388,0.0,{'reason': 'insufficient_data'}
+2026-05-19T04:00:00+00:00,GFAI,hold,0.4909999966621399,0.0,{'reason': 'insufficient_data'}
+2026-05-20T04:00:00+00:00,GFAI,hold,0.5090000033378601,0.0,{'reason': 'insufficient_data'}
+2026-05-21T04:00:00+00:00,GFAI,hold,0.48500001430511475,0.0,{'reason': 'insufficient_data'}
+2026-05-22T04:00:00+00:00,GFAI,hold,0.47699999809265137,0.0,{'reason': 'insufficient_data'}
+2026-05-26T04:00:00+00:00,GFAI,hold,0.4970000088214874,0.0,{'reason': 'insufficient_data'}
+2026-05-27T04:00:00+00:00,GFAI,hold,0.4819999933242798,0.0,{'reason': 'insufficient_data'}
+2026-05-28T04:00:00+00:00,GFAI,hold,0.5,0.0,{'reason': 'insufficient_data'}
+2026-05-29T04:00:00+00:00,GFAI,hold,0.5299999713897705,0.0,{'reason': 'insufficient_data'}
+2026-06-01T04:00:00+00:00,GFAI,hold,0.6000000238418579,0.0,{'reason': 'insufficient_data'}
+2026-06-02T04:00:00+00:00,GFAI,hold,0.6370000243186951,0.0,{'reason': 'insufficient_data'}
+2026-06-03T04:00:00+00:00,GFAI,hold,0.5600000023841858,0.0,{'reason': 'insufficient_data'}
+2026-06-04T04:00:00+00:00,GFAI,hold,0.5569999814033508,0.0,{'reason': 'insufficient_data'}
+2026-06-05T04:00:00+00:00,GFAI,hold,0.4580000042915344,0.0,{'reason': 'insufficient_data'}
+2026-06-08T04:00:00+00:00,GFAI,hold,0.42800000309944153,0.0,{'reason': 'insufficient_data'}
