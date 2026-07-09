@@ -6,6 +6,7 @@ admin dashboard, and product update-check endpoints.
 """
 from __future__ import annotations
 
+import os
 import logging
 import secrets
 from contextlib import asynccontextmanager
@@ -165,19 +166,31 @@ async def _seed_admin(session):
     result = await session.execute(select(User).where(User.email == settings.ADMIN_EMAIL))
     admin = result.scalar_one_or_none()
 
-    # Log raw env var to debug Railway issues
-    raw_password = settings.admin_password_resolved
-    logger.info(f"  ADMIN_EMAIL={settings.ADMIN_EMAIL}")
-    logger.info(f"  ADMIN_PASSWORD env var present: {raw_password is not None}")
-    logger.info(f"  ADMIN_PASSWORD raw: [{raw_password}]" if raw_password else "  ADMIN_PASSWORD raw: [None]")
+    # ── Direct print debugging (logger.info doesn't show in Railway logs) ──
+    print("[DEBUG] ======= _seed_admin debug start =======")
+    print(f"[DEBUG] ADMIN_EMAIL = {settings.ADMIN_EMAIL}")
+    print(f"[DEBUG] os.environ.get('ADMIN_PASSWORD') = {os.environ.get('ADMIN_PASSWORD', 'NOT SET')}")
+    print(f"[DEBUG] os.environ.get('admin_password') = {os.environ.get('admin_password', 'NOT SET')}")
+    print(f"[DEBUG] settings.ADMIN_PASSWORD = {settings.ADMIN_PASSWORD}")
+    print(f"[DEBUG] settings.admin_password_resolved = {settings.admin_password_resolved}")
+    all_env_keys = [k for k in os.environ.keys() if 'PASS' in k.upper() or 'ADMIN' in k.upper()]
+    print(f"[DEBUG] Matching env vars: {all_env_keys}")
+    print("[DEBUG] ======= _seed_admin debug end =========")
+
+    raw_password = os.environ.get("ADMIN_PASSWORD")
+    if not raw_password:
+        raw_password = os.environ.get("admin_password")
+    if not raw_password:
+        raw_password = settings.admin_password_resolved
 
     if raw_password:
         admin_password = raw_password
+        print(f"[DEBUG] Using env var password: {admin_password[:3]}***{admin_password[-3:]}")
     else:
         admin_password = secrets.token_urlsafe(12)
+        print(f"[DEBUG] No env var set - generated random password")
 
     if not admin:
-        # Create new admin
         admin = User(
             email=settings.ADMIN_EMAIL,
             password_hash=hash_password(admin_password),
@@ -188,11 +201,10 @@ async def _seed_admin(session):
         )
         session.add(admin)
         await session.flush()
-        logger.info(f"  Created super admin: {settings.ADMIN_EMAIL}")
+        print(f"[DEBUG] Created new admin user")
     else:
-        # Always update the password hash to match current env var
         admin.password_hash = hash_password(admin_password)
-        logger.info(f"  Updated password for super admin: {settings.ADMIN_EMAIL}")
+        print(f"[DEBUG] Updated existing admin password")
 
     await session.flush()
     print("=" * 60)
