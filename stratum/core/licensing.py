@@ -58,10 +58,18 @@ except ImportError:
     HAS_CRYPTO = False
     logger.warning("cryptography not installed. Using fallback license storage.")
 
+try:
+    import httpx
+    HAS_HTTPX = True
+except ImportError:
+    HAS_HTTPX = False
+
 _APP_SECRET = b"Stratum2024WovenModelSecureKey!"
 
-# Default licensing server URL (configurable via settings)
-DEFAULT_LICENSING_SERVER_URL = "http://localhost:8000"
+# Default licensing server URL — Railway production with local dev fallback
+# The app tries online first, then falls back to localhost, then local file
+DEFAULT_LICENSING_SERVER_URL = "https://woven-licensing-production.up.railway.app"
+LOCAL_LICENSING_SERVER_URL = "http://localhost:8000"
 
 # Feature flags — which features are available in trial vs licensed mode
 FEATURES = {
@@ -185,44 +193,87 @@ class LicenseManager:
         except Exception:
             return False
 
+    def _server_activate(self, license_key: str) -> Tuple[Optional[Dict], Optional[str]]:
+        """Try to activate against the remote licensing server.
+        Returns (license_data_dict, error_string)."""
+        server_urls = [self._server_url, LOCAL_LICENSING_SERVER_URL]
+
+        for url in server_urls:
+            # Try SDK first
+            if self._sdk_client:
+                try:
+                    result = self._sdk_client.activate(license_key)
+                    if result.success:
+                        cert = result.data.get("certificate", {})
+                        return cert, None
+                except (LicenseNetworkError, Exception):
+                    pass
+
+            # Try direct HTTP call
+            if HAS_HTTPX:
+                try:
+                    resp = httpx.post(
+                        f"{url}/api/v1/activate",
+                        json={
+                            "license_key": license_key,
+                            "fingerprint": self._machine_id,
+                            "application_version": "1.2.0",
+                        },
+                        timeout=10.0,
+                    )
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        if data.get("success"):
+                            cert = data.get("certificate", {}).get("certificate", {})
+                            if cert:
+                                return cert, None
+                            return None, "Server response missing certificate"
+                        else:
+                            return None, data.get("message", "Server activation failed")
+                    elif resp.status_code == 422:
+                        # Validation error — bad request, don't retry other URLs
+                        err_detail = resp.json().get("detail", "Invalid request")
+                        return None, f"Server validation error: {err_detail}"
+                    else:
+                        logger.warning(f"Server {url} returned {resp.status_code}")
+                except (httpx.ConnectError, httpx.TimeoutException) as e:
+                    logger.warning(f"Cannot reach {url}: {e}")
+                    continue
+                except Exception as e:
+                    logger.warning(f"HTTP activation failed for {url}: {e}")
+                    continue
+
+        return None, None  # No server reached
+
     def activate(self, license_key: str) -> Tuple[bool, str]:
         """Activate the application with a license key via the licensing server."""
         # First-pass format validation
         if not self._validate_license_key_format(license_key):
             return False, "Invalid license key. Expected XXXXX-XXXXX-XXXXX-XXXXX format with valid checksum."
 
-        # Try server activation via SDK
-        if self._sdk_client:
-            try:
-                result = self._sdk_client.activate(license_key)
-                if result.success:
-                    # Extract license data from server certificate
-                    cert = result.data.get("certificate", {})
-                    license_data = {
-                        "license_key": license_key,
-                        "machine_id": self._machine_id,
-                        "activated_at": datetime.now(timezone.utc).isoformat(),
-                        "expires_at": cert.get("expiration_date"),
-                        "version": "1.0.0",
-                        "product": "Stratum",
-                        "features": cert.get("feature_flags", ["all"]),
-                        "server_verified": True,
-                    }
-                    self._license_data = license_data
-                    self._activated = True
-                    self._trial_mode = False
-                    # Remove trial file if exists
-                    trial_file = LICENSE_DIR / ".trial"
-                    if trial_file.exists():
-                        trial_file.unlink()
-                    self._save_to_file(license_data)
-                    return True, "License activated successfully via server! All features unlocked."
-            except LicenseActivationError as e:
-                return False, str(e)
-            except LicenseNetworkError:
-                logger.warning("Server unreachable during activation. Falling back to local.")
-            except Exception as e:
-                logger.warning(f"Server activation failed: {e}. Falling back to local.")
+        # Try server activation
+        cert, err = self._server_activate(license_key)
+        if cert:
+            license_data = {
+                "license_key": license_key,
+                "machine_id": self._machine_id,
+                "activated_at": datetime.now(timezone.utc).isoformat(),
+                "expires_at": cert.get("expiration_date"),
+                "version": "1.0.0",
+                "product": "Stratum",
+                "features": cert.get("feature_flags", ["all"]),
+                "server_verified": True,
+            }
+            self._license_data = license_data
+            self._activated = True
+            self._trial_mode = False
+            trial_file = LICENSE_DIR / ".trial"
+            if trial_file.exists():
+                trial_file.unlink()
+            self._save_to_file(license_data)
+            return True, "License activated successfully via server! All features unlocked."
+        elif err:
+            return False, err
 
         # Fallback: local activation (offline mode)
         if self.license_file.exists():
