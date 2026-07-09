@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "production"
 
     # Database
+    # NOTE: Railway PostgreSQL add-on sets DATABASE_URL=postgresql://user:pass@host/db
+    # Config auto-translates postgresql:// → postgresql+asyncpg:// for async driver.
     DATABASE_URL: str = "sqlite+aiosqlite:///./woven_licensing.db"
 
     # JWT
@@ -59,6 +61,19 @@ class Settings(BaseSettings):
     @property
     def cors_origins_list(self) -> list[str]:
         return [o.strip() for o in self.CORS_ORIGINS.split(",") if o.strip()]
+
+    @property
+    def async_database_url(self) -> str:
+        """Return the DATABASE_URL with the correct async driver prefix.
+
+        Railway PostgreSQL add-on sets DATABASE_URL=postgresql://user:pass@host/db
+        but SQLAlchemy async engine requires postgresql+asyncpg:// instead.
+        SQLite stays as-is since aiosqlite is the default.
+        """
+        url = self.DATABASE_URL
+        if url.startswith("postgresql://") and "+asyncpg" not in url:
+            url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
+        return url
 
 
 settings = Settings()

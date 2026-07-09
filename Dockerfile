@@ -31,9 +31,11 @@ RUN python scripts/genkeys_for_docker.py && echo "Keys generated"
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 ENV CORS_ORIGINS=*
-ENV DATABASE_URL=sqlite+aiosqlite:///./data/woven_licensing.db
+# NOTE: Do NOT set DATABASE_URL here. Railway PostgreSQL add-on provides
+# postgresql://... via environment. Config.py auto-translates to async driver.
+# If no DATABASE_URL is set, the app defaults to SQLite (for local dev).
 
-# Create data directory for SQLite
+# Create data directory for SQLite (fallback for local dev)
 RUN mkdir -p /app/data
 
 # Copy entrypoint script
