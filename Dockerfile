@@ -24,14 +24,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY licensing-server/backend/ .
 
-# Generate signing keys if not provided via env
-RUN python scripts/generate_keys.py 2>&1 | tee /tmp/keygen.log || true
+# Generate signing keys at build time and bake them into the image
+RUN python scripts/genkeys_for_docker.py && echo "Keys generated"
 
 # Environment — set defaults Railway will override via env vars
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
-ENV SECRET_KEY=railway-auto
-ENV JWT_SECRET_KEY=railway-auto
 ENV CORS_ORIGINS=*
 ENV DATABASE_URL=sqlite+aiosqlite:///./data/woven_licensing.db
 
