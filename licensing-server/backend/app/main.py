@@ -15,7 +15,8 @@ from typing import AsyncGenerator
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy import select, text
 
 from app.config import settings
@@ -50,6 +51,14 @@ def _create_app() -> FastAPI:
 
     # Include API router
     app.include_router(api_router)
+
+    # Serve licensing portal static files
+    portal_dir = Path(__file__).resolve().parent.parent / "portal"
+    if portal_dir.is_dir():
+        app.mount("/", StaticFiles(directory=str(portal_dir), html=True), name="portal")
+        logger.info(f"Serving portal from {portal_dir}")
+    else:
+        logger.warning(f"Portal directory not found: {portal_dir}")
 
     return app
 
