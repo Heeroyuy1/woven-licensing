@@ -63,13 +63,28 @@ def _create_app() -> FastAPI:
             return FileResponse(str(login_file))
         return JSONResponse(status_code=404, content={"detail": "login.html not found"})
 
+    @app.get("/health", tags=["System"])
+    async def health_check():
+        """Health check endpoint for monitoring and load balancers."""
+        db_ok = False
+        try:
+            async with async_session_factory() as session:
+                await session.execute(text("SELECT 1"))
+                db_ok = True
+        except Exception as e:
+            logger.error(f"Health check DB failure: {e}")
+
+        return {
+            "status": "healthy" if db_ok else "degraded",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "version": settings.APP_VERSION,
+            "database": "connected" if db_ok else "disconnected",
+        }
+
     @app.get("/")
     @app.get("/{full_path:path}")
     async def serve_portal(full_path: str = ""):
         """Serve SPA — API routes are checked first, so only non-API paths reach here."""
-        # Don't interfere with API or health paths
-        if full_path.startswith("api/") or full_path.startswith("health") or full_path.startswith("docs") or full_path.startswith("redoc") or full_path.startswith("openapi"):
-            return JSONResponse(status_code=404, content={"detail": "Not Found"})
         # Serve static file if it exists
         if full_path:
             file_path = PORTAL_DIR / full_path
@@ -163,25 +178,6 @@ async def _seed_admin(session):
         print("=" * 60)
     else:
         logger.debug("  Super admin exists: admin@wovenmodel.com")
-
-
-@app.get("/health", tags=["System"])
-async def health_check():
-    """Health check endpoint for monitoring and load balancers."""
-    db_ok = False
-    try:
-        async with async_session_factory() as session:
-            await session.execute(text("SELECT 1"))
-            db_ok = True
-    except Exception as e:
-        logger.error(f"Health check DB failure: {e}")
-
-    return {
-        "status": "healthy" if db_ok else "degraded",
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "version": settings.APP_VERSION,
-        "database": "connected" if db_ok else "disconnected",
-    }
 
 
 @app.exception_handler(Exception)
