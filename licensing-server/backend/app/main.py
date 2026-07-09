@@ -52,13 +52,38 @@ def _create_app() -> FastAPI:
     # Include API router
     app.include_router(api_router)
 
-    # Serve licensing portal static files
-    portal_dir = Path(__file__).resolve().parent.parent / "portal"
-    if portal_dir.is_dir():
-        app.mount("/", StaticFiles(directory=str(portal_dir), html=True), name="portal")
-        logger.info(f"Serving portal from {portal_dir}")
+    # Serve licensing portal SPA at root
+    PORTAL_DIR = Path(__file__).resolve().parent.parent / "portal"
+    PORTAL_INDEX = PORTAL_DIR / "index.html"
+
+    @app.get("/login.html")
+    async def portal_login():
+        login_file = PORTAL_DIR / "login.html"
+        if login_file.exists():
+            return FileResponse(str(login_file))
+        return JSONResponse(status_code=404, content={"detail": "login.html not found"})
+
+    @app.get("/")
+    @app.get("/{full_path:path}")
+    async def serve_portal(full_path: str = ""):
+        """Serve SPA — API routes are checked first, so only non-API paths reach here."""
+        # Don't interfere with API or health paths
+        if full_path.startswith("api/") or full_path.startswith("health") or full_path.startswith("docs") or full_path.startswith("redoc") or full_path.startswith("openapi"):
+            return JSONResponse(status_code=404, content={"detail": "Not Found"})
+        # Serve static file if it exists
+        if full_path:
+            file_path = PORTAL_DIR / full_path
+            if file_path.exists() and file_path.is_file():
+                return FileResponse(str(file_path))
+        # SPA fallback to index.html
+        if PORTAL_INDEX.exists():
+            return FileResponse(str(PORTAL_INDEX))
+        return JSONResponse(status_code=404, content={"detail": "Portal not built"})
+
+    if PORTAL_DIR.is_dir():
+        logger.info(f"Serving portal from {PORTAL_DIR}")
     else:
-        logger.warning(f"Portal directory not found: {portal_dir}")
+        logger.warning(f"Portal directory not found: {PORTAL_DIR}")
 
     return app
 
