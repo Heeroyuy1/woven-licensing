@@ -157,13 +157,14 @@ async def _seed_products(session):
 
 
 async def _seed_admin(session):
-    """Ensure a super admin user exists."""
-    result = await session.execute(select(User).where(User.email == "admin@wovenmodel.com"))
+    """Ensure a super admin user exists with the configured password."""
+    result = await session.execute(select(User).where(User.email == settings.ADMIN_EMAIL))
     admin = result.scalar_one_or_none()
     if not admin:
-        admin_password = secrets.token_urlsafe(12)
+        # Create new admin with configured password (or random if unset)
+        admin_password = settings.ADMIN_PASSWORD or secrets.token_urlsafe(12)
         admin = User(
-            email="admin@wovenmodel.com",
+            email=settings.ADMIN_EMAIL,
             password_hash=hash_password(admin_password),
             name="System Administrator",
             role=UserRole.SUPER_ADMIN,
@@ -172,14 +173,24 @@ async def _seed_admin(session):
         )
         session.add(admin)
         await session.flush()
-        logger.info(f"  Created super admin: admin@wovenmodel.com / {admin_password}")
+        logger.info(f"  Created super admin: {settings.ADMIN_EMAIL}")
+        admin_password_display = (
+            "****** (set via ADMIN_PASSWORD env var)"
+            if settings.ADMIN_PASSWORD
+            else admin_password
+        )
         print("=" * 60)
         print(f"SUPER ADMIN CREDENTIALS (save these):")
-        print(f"  Email:    admin@wovenmodel.com")
-        print(f"  Password: {admin_password}")
+        print(f"  Email:    {settings.ADMIN_EMAIL}")
+        print(f"  Password: {admin_password_display}")
         print("=" * 60)
     else:
-        logger.debug("  Super admin exists: admin@wovenmodel.com")
+        # Admin exists — update password if ADMIN_PASSWORD env var is set
+        if settings.ADMIN_PASSWORD:
+            admin.password_hash = hash_password(settings.ADMIN_PASSWORD)
+            logger.info(f"  Updated password for super admin: {settings.ADMIN_EMAIL}")
+        else:
+            logger.debug(f"  Super admin exists: {settings.ADMIN_EMAIL}")
 
 
 @app.exception_handler(Exception)

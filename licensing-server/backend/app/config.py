@@ -30,6 +30,10 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
 
+    # Admin account (used for seeding on startup)
+    ADMIN_EMAIL: str = "admin@wovenmodel.com"
+    ADMIN_PASSWORD: Optional[str] = None  # if None, a random password is generated
+
     # Signing Keys (Ed25519 hex-encoded)
     SIGNING_PRIVATE_KEY: Optional[str] = None
     SIGNING_PUBLIC_KEY: Optional[str] = None
