@@ -157,12 +157,27 @@ async def _seed_products(session):
 
 
 async def _seed_admin(session):
-    """Ensure a super admin user exists with the configured password."""
+    """Ensure a super admin user exists with the configured password.
+
+    ALWAYS updates the password from ADMIN_PASSWORD env var on every startup.
+    This ensures Railway environment changes take effect immediately.
+    """
     result = await session.execute(select(User).where(User.email == settings.ADMIN_EMAIL))
     admin = result.scalar_one_or_none()
+
+    # Log raw env var to debug Railway issues
+    raw_password = settings.ADMIN_PASSWORD
+    logger.info(f"  ADMIN_EMAIL={settings.ADMIN_EMAIL}")
+    logger.info(f"  ADMIN_PASSWORD env var present: {raw_password is not None}")
+    logger.info(f"  ADMIN_PASSWORD length: {len(raw_password) if raw_password else 0}")
+
+    if raw_password:
+        admin_password = raw_password
+    else:
+        admin_password = secrets.token_urlsafe(12)
+
     if not admin:
-        # Create new admin with configured password (or random if unset)
-        admin_password = settings.ADMIN_PASSWORD or secrets.token_urlsafe(12)
+        # Create new admin
         admin = User(
             email=settings.ADMIN_EMAIL,
             password_hash=hash_password(admin_password),
@@ -174,23 +189,17 @@ async def _seed_admin(session):
         session.add(admin)
         await session.flush()
         logger.info(f"  Created super admin: {settings.ADMIN_EMAIL}")
-        admin_password_display = (
-            "****** (set via ADMIN_PASSWORD env var)"
-            if settings.ADMIN_PASSWORD
-            else admin_password
-        )
-        print("=" * 60)
-        print(f"SUPER ADMIN CREDENTIALS (save these):")
-        print(f"  Email:    {settings.ADMIN_EMAIL}")
-        print(f"  Password: {admin_password_display}")
-        print("=" * 60)
     else:
-        # Admin exists — update password if ADMIN_PASSWORD env var is set
-        if settings.ADMIN_PASSWORD:
-            admin.password_hash = hash_password(settings.ADMIN_PASSWORD)
-            logger.info(f"  Updated password for super admin: {settings.ADMIN_EMAIL}")
-        else:
-            logger.debug(f"  Super admin exists: {settings.ADMIN_EMAIL}")
+        # Always update the password hash to match current env var
+        admin.password_hash = hash_password(admin_password)
+        logger.info(f"  Updated password for super admin: {settings.ADMIN_EMAIL}")
+
+    await session.flush()
+    print("=" * 60)
+    print(f"SUPER ADMIN CREDENTIALS:")
+    print(f"  Email:    {settings.ADMIN_EMAIL}")
+    print(f"  Password: {admin_password}")
+    print("=" * 60)
 
 
 @app.exception_handler(Exception)
