@@ -1,6 +1,7 @@
 """Application configuration via environment variables."""
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Optional
 
@@ -22,8 +23,6 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "production"
 
     # Database
-    # NOTE: Railway PostgreSQL add-on sets DATABASE_URL=postgresql://user:pass@host/db
-    # Config auto-translates postgresql:// → postgresql+asyncpg:// for async driver.
     DATABASE_URL: str = "sqlite+aiosqlite:///./woven_licensing.db"
 
     # JWT
@@ -32,9 +31,9 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
 
-    # Admin account (used for seeding on startup)
+    # Admin account
     ADMIN_EMAIL: str = "admin@wovenmodel.com"
-    ADMIN_PASSWORD: Optional[str] = None  # if None, a random password is generated
+    ADMIN_PASSWORD: Optional[str] = None
 
     # Signing Keys (Ed25519 hex-encoded)
     SIGNING_PRIVATE_KEY: Optional[str] = None
@@ -64,16 +63,28 @@ class Settings(BaseSettings):
 
     @property
     def async_database_url(self) -> str:
-        """Return the DATABASE_URL with the correct async driver prefix.
-
-        Railway PostgreSQL add-on sets DATABASE_URL=postgresql://user:pass@host/db
-        but SQLAlchemy async engine requires postgresql+asyncpg:// instead.
-        SQLite stays as-is since aiosqlite is the default.
-        """
         url = self.DATABASE_URL
         if url.startswith("postgresql://") and "+asyncpg" not in url:
             url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
         return url
+
+    @property
+    def admin_password_resolved(self) -> Optional[str]:
+        """Resolve admin password from env with fallback.
+
+        pydantic-settings may not pick up Railway env vars in some cases,
+        so we fall back to os.environ directly.
+        """
+        if self.ADMIN_PASSWORD:
+            return self.ADMIN_PASSWORD
+        # Direct fallback — bypass pydantic
+        env_val = os.environ.get("ADMIN_PASSWORD")
+        if env_val:
+            return env_val
+        env_val = os.environ.get("admin_password")
+        if env_val:
+            return env_val
+        return None
 
 
 settings = Settings()

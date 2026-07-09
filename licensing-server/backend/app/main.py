@@ -166,10 +166,10 @@ async def _seed_admin(session):
     admin = result.scalar_one_or_none()
 
     # Log raw env var to debug Railway issues
-    raw_password = settings.ADMIN_PASSWORD
+    raw_password = settings.admin_password_resolved
     logger.info(f"  ADMIN_EMAIL={settings.ADMIN_EMAIL}")
     logger.info(f"  ADMIN_PASSWORD env var present: {raw_password is not None}")
-    logger.info(f"  ADMIN_PASSWORD length: {len(raw_password) if raw_password else 0}")
+    logger.info(f"  ADMIN_PASSWORD raw: [{raw_password}]" if raw_password else "  ADMIN_PASSWORD raw: [None]")
 
     if raw_password:
         admin_password = raw_password
