@@ -36,13 +36,12 @@ ENV DATABASE_URL=sqlite+aiosqlite:///./data/woven_licensing.db
 # Create data directory for SQLite
 RUN mkdir -p /app/data
 
+# Copy entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 # Expose API port
 EXPOSE 8000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:8080/health || exit 1
-
-# Run with uvicorn — single worker only (SQLite cannot handle concurrent writers)
-# Hardcode port 8080 — Railway sets PORT=8080 and domain was generated for this port
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips", "*"]
+# Run via entrypoint for startup diagnostics and dynamic port binding
+CMD ["/entrypoint.sh"]
