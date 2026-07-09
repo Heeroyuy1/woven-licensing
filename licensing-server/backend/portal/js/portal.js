@@ -543,6 +543,40 @@ window.hideGenerateModal = () => hideModal('modal-generate');
 window.showCreateUserModal = () => showModal('modal-create-user');
 window.hideCreateUserModal = () => hideModal('modal-create-user');
 
+window.showCreateProductModal = () => showModal('modal-create-product');
+window.hideCreateProductModal = () => hideModal('modal-create-product');
+
+window.handleCreateProduct = async function(e) {
+    e.preventDefault();
+    const code = document.getElementById('new-product-code').value.trim().toUpperCase().replace(/\s+/g, '_');
+    const name = document.getElementById('new-product-name').value.trim();
+    const version = document.getElementById('new-product-version').value.trim() || '1.0.0';
+    const description = document.getElementById('new-product-description').value.trim() || null;
+
+    if (!code || !name) {
+        showToast('Product code and name are required', 'error');
+        return;
+    }
+
+    const btn = document.getElementById('create-product-submit');
+    btn.disabled = true;
+    btn.textContent = 'Creating…';
+    try {
+        const result = await api.createProduct(code, name, version, description);
+        showToast(`Product "${result.name}" created!`, 'success');
+        hideModal('modal-create-product');
+        document.getElementById('create-product-form').reset();
+        // Refresh product list
+        state.products = await api.getProducts();
+        populateProductSelect();
+    } catch (err) {
+        showToast(err.message || 'Failed to create product', 'error');
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Create Product';
+    }
+};
+
 // ── SVG Icons ────────────────────────────────────────────────────
 function svgIcon(name) {
     const icons = {
@@ -624,6 +658,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create user form
     const createForm = document.getElementById('create-user-form');
     if (createForm) createForm.addEventListener('submit', window.handleCreateUser);
+
+    // Create product form
+    const createProductForm = document.getElementById('create-product-form');
+    if (createProductForm) createProductForm.addEventListener('submit', window.handleCreateProduct);
 
     // Export dropdown
     const exportBtn = document.getElementById('export-btn');

@@ -27,6 +27,8 @@ async def init():
             {"code": "AI_TSA", "name": "AI Trading Strategy Analyzer", "version": "1.0.0"},
             {"code": "BACKTESTING_BOT", "name": "Backtesting Bot", "version": "1.0.0"},
             {"code": "CONQUEST", "name": "Conquest Trading Engine", "version": "2.0.0"},
+            {"code": "PII_REMOVER", "name": "Woven Model PII Remover", "version": "1.0.0"},
+            {"code": "JEEVES", "name": "Woven Model Jeeves", "version": "1.0.0"},
         ]
         for p in products:
             result = await session.execute(select(Product).where(Product.code == p["code"]))

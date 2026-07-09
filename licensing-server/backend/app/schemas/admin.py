@@ -114,6 +114,27 @@ class AdminLogEntry(BaseModel):
         from_attributes = True
 
 
+class AdminCreateProductRequest(BaseModel):
+    code: str = Field(..., min_length=1, max_length=100, description="Unique product code, e.g. PII_REMOVER")
+    name: str = Field(..., min_length=1, max_length=255)
+    version: str = "1.0.0"
+    description: Optional[str] = None
+    active: bool = True
+
+
+class AdminProductResponse(BaseModel):
+    id: int
+    code: str
+    name: str
+    version: str
+    description: Optional[str] = None
+    active: bool
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+
 class AdminExportResponse(BaseModel):
     export_type: str
     record_count: int

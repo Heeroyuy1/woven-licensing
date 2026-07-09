@@ -23,6 +23,7 @@ from app.schemas.admin import (
     AdminGenerateLicenseRequest, AdminRevokeLicenseRequest,
     AdminUserResponse, AdminLicenseResponse, AdminMachineResponse,
     AdminStatsResponse, AdminLogEntry, AdminExportResponse,
+    AdminCreateProductRequest, AdminProductResponse,
 )
 from app.services.auth_service import hash_password, create_user
 from app.services.license_service import create_license
@@ -323,6 +324,40 @@ async def admin_stats(
         licenses_by_type=licenses_by_type,
         licenses_by_status=licenses_by_status,
         recent_activations_24h=recent,
+    )
+
+
+@router.post("/products", response_model=AdminProductResponse, status_code=status.HTTP_201_CREATED)
+async def admin_create_product(
+    body: AdminCreateProductRequest,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin),
+):
+    """Create a new product in the licensing system."""
+    # Check for duplicate code
+    result = await db.execute(select(Product).where(Product.code == body.code))
+    if result.scalar_one_or_none():
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail=f"Product with code '{body.code}' already exists",
+        )
+    product = Product(
+        code=body.code,
+        name=body.name,
+        version=body.version,
+        description=body.description,
+        active=body.active,
+    )
+    db.add(product)
+    await db.flush()
+    return AdminProductResponse(
+        id=product.id,
+        code=product.code,
+        name=product.name,
+        version=product.version,
+        description=product.description,
+        active=product.active,
+        created_at=product.created_at,
     )
 
 

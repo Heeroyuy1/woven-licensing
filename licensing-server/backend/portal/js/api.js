@@ -215,6 +215,15 @@ export class LicensingApi {
         return this._get('/api/v1/admin/logs', params);
     }
 
+    // ── Admin: Products ───────────────────────────────────────
+    async createProduct(code, name, version = '1.0.0', description = null) {
+        return this._post('/api/v1/admin/products', {
+            code, name, version,
+            description: description || null,
+            active: true,
+        });
+    }
+
     // ── Admin: Export ──────────────────────────────────────────
     async exportData(exportType) {
         return this._get('/api/v1/admin/export', { export_type: exportType });

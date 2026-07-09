@@ -248,6 +248,14 @@
                 </div>
 
                 <div class="settings-section">
+                    <h3>Manage Products</h3>
+                    <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Create new products that can be licensed. Products are also auto-seeded on server startup.</p>
+                    <div style="display:flex;gap:8px;">
+                        <button class="btn btn-primary btn-sm" onclick="showCreateProductModal()">Create Product</button>
+                    </div>
+                </div>
+
+                <div class="settings-section">
                     <h3>Quick Actions</h3>
                     <div style="display:flex;gap:8px;flex-wrap:wrap;">
                         <button class="btn btn-primary btn-sm" onclick="showGenerateModal()">Generate License</button>
@@ -355,6 +363,42 @@
             <div class="modal-body" id="license-detail-content">
                 <div class="loading"><div class="spinner"></div></div>
             </div>
+        </div>
+    </div>
+
+    <!-- Create Product Modal -->
+    <div class="modal-overlay" id="modal-create-product">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Create Product</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form id="create-product-form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="new-product-code">Product Code *</label>
+                        <input type="text" id="new-product-code" placeholder="e.g. PII_REMOVER" required
+                               style="text-transform:uppercase;font-family:monospace;">
+                        <small style="color:var(--text-muted);font-size:11px;">Uppercase, no spaces. Use underscores.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-product-name">Product Name *</label>
+                        <input type="text" id="new-product-name" placeholder="e.g. Woven Model PII Remover" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-product-version">Version</label>
+                        <input type="text" id="new-product-version" placeholder="1.0.0" value="1.0.0">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-product-description">Description (optional)</label>
+                        <textarea id="new-product-description" placeholder="Brief description of the product" rows="2" style="resize:vertical;"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" onclick="hideCreateProductModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="create-product-submit">Create Product</button>
+                </div>
+            </form>
         </div>
     </div>
 
